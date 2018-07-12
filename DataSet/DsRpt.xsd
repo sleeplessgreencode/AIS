@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsRpt" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsRpt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsRpt" msprop:Generator_UserDSName="DsRpt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TmpDt" msprop:Generator_TableClassName="TmpDtDataTable" msprop:Generator_TableVarName="tableTmpDt" msprop:Generator_TablePropName="TmpDt" msprop:Generator_RowDeletingName="TmpDtRowDeleting" msprop:Generator_RowChangingName="TmpDtRowChanging" msprop:Generator_RowEvHandlerName="TmpDtRowChangeEventHandler" msprop:Generator_RowDeletedName="TmpDtRowDeleted" msprop:Generator_UserTableName="TmpDt" msprop:Generator_RowChangedName="TmpDtRowChanged" msprop:Generator_RowEvArgName="TmpDtRowChangeEvent" msprop:Generator_RowClassName="TmpDtRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobNo" msprop:Generator_ColumnVarNameInTable="columnJobNo" msprop:Generator_ColumnPropNameInRow="JobNo" msprop:Generator_ColumnPropNameInTable="JobNoColumn" msprop:Generator_UserColumnName="JobNo" type="xs:string" minOccurs="0" />
+              <xs:element name="JobNm" msprop:Generator_ColumnVarNameInTable="columnJobNm" msprop:Generator_ColumnPropNameInRow="JobNm" msprop:Generator_ColumnPropNameInTable="JobNmColumn" msprop:Generator_UserColumnName="JobNm" type="xs:string" minOccurs="0" />
+              <xs:element name="NettoKontrak" msprop:Generator_ColumnVarNameInTable="columnNettoKontrak" msprop:Generator_ColumnPropNameInRow="NettoKontrak" msprop:Generator_ColumnPropNameInTable="NettoKontrakColumn" msprop:Generator_UserColumnName="NettoKontrak" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipeManajerial" msprop:Generator_ColumnVarNameInTable="columnTipeManajerial" msprop:Generator_ColumnPropNameInRow="TipeManajerial" msprop:Generator_ColumnPropNameInTable="TipeManajerialColumn" msprop:Generator_UserColumnName="TipeManajerial" type="xs:string" minOccurs="0" />
+              <xs:element name="ShareMinarta" msprop:Generator_ColumnVarNameInTable="columnShareMinarta" msprop:Generator_ColumnPropNameInRow="ShareMinarta" msprop:Generator_ColumnPropNameInTable="ShareMinartaColumn" msprop:Generator_UserColumnName="ShareMinarta" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RAP" msprop:Generator_ColumnVarNameInTable="columnRAP" msprop:Generator_ColumnPropNameInRow="RAP" msprop:Generator_ColumnPropNameInTable="RAPColumn" msprop:Generator_UserColumnName="RAP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MggLalu" msprop:Generator_ColumnVarNameInTable="columnMggLalu" msprop:Generator_ColumnPropNameInRow="MggLalu" msprop:Generator_ColumnPropNameInTable="MggLaluColumn" msprop:Generator_UserColumnName="MggLalu" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MggIni" msprop:Generator_ColumnVarNameInTable="columnMggIni" msprop:Generator_ColumnPropNameInRow="MggIni" msprop:Generator_ColumnPropNameInTable="MggIniColumn" msprop:Generator_UserColumnName="MggIni" type="xs:decimal" minOccurs="0" />
+              <xs:element name="YTD" msprop:Generator_ColumnVarNameInTable="columnYTD" msprop:Generator_ColumnPropNameInRow="YTD" msprop:Generator_ColumnPropNameInTable="YTDColumn" msprop:Generator_UserColumnName="YTD" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

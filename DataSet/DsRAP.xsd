@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsRAP" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsRAP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsRAP" msprop:Generator_UserDSName="DsRAP">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RAP" msprop:Generator_TableClassName="RAPDataTable" msprop:Generator_TableVarName="tableRAP" msprop:Generator_RowChangedName="RAPRowChanged" msprop:Generator_TablePropName="RAP" msprop:Generator_RowDeletingName="RAPRowDeleting" msprop:Generator_RowChangingName="RAPRowChanging" msprop:Generator_RowEvHandlerName="RAPRowChangeEventHandler" msprop:Generator_RowDeletedName="RAPRowDeleted" msprop:Generator_RowClassName="RAPRow" msprop:Generator_UserTableName="RAP" msprop:Generator_RowEvArgName="RAPRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobNo" msprop:Generator_ColumnVarNameInTable="columnJobNo" msprop:Generator_ColumnPropNameInRow="JobNo" msprop:Generator_ColumnPropNameInTable="JobNoColumn" msprop:Generator_UserColumnName="JobNo" type="xs:string" minOccurs="0" />
+              <xs:element name="KdRAP" msprop:Generator_ColumnVarNameInTable="columnKdRAP" msprop:Generator_ColumnPropNameInRow="KdRAP" msprop:Generator_ColumnPropNameInTable="KdRAPColumn" msprop:Generator_UserColumnName="KdRAP" type="xs:string" minOccurs="0" />
+              <xs:element name="Versi" msprop:Generator_ColumnVarNameInTable="columnVersi" msprop:Generator_ColumnPropNameInRow="Versi" msprop:Generator_ColumnPropNameInTable="VersiColumn" msprop:Generator_UserColumnName="Versi" type="xs:string" minOccurs="0" />
+              <xs:element name="NoUrut" msprop:Generator_ColumnVarNameInTable="columnNoUrut" msprop:Generator_ColumnPropNameInRow="NoUrut" msprop:Generator_ColumnPropNameInTable="NoUrutColumn" msprop:Generator_UserColumnName="NoUrut" type="xs:int" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" msprop:Generator_UserColumnName="Uraian" type="xs:string" minOccurs="0" />
+              <xs:element name="Alokasi" msprop:Generator_ColumnVarNameInTable="columnAlokasi" msprop:Generator_ColumnPropNameInRow="Alokasi" msprop:Generator_ColumnPropNameInTable="AlokasiColumn" msprop:Generator_UserColumnName="Alokasi" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipe" msprop:Generator_ColumnVarNameInTable="columnTipe" msprop:Generator_ColumnPropNameInRow="Tipe" msprop:Generator_ColumnPropNameInTable="TipeColumn" msprop:Generator_UserColumnName="Tipe" type="xs:string" minOccurs="0" />
+              <xs:element name="Header" msprop:Generator_ColumnVarNameInTable="columnHeader" msprop:Generator_ColumnPropNameInRow="Header" msprop:Generator_ColumnPropNameInTable="HeaderColumn" msprop:Generator_UserColumnName="Header" type="xs:string" minOccurs="0" />
+              <xs:element name="Uom" msprop:Generator_ColumnVarNameInTable="columnUom" msprop:Generator_ColumnPropNameInRow="Uom" msprop:Generator_ColumnPropNameInTable="UomColumn" msprop:Generator_UserColumnName="Uom" type="xs:string" minOccurs="0" />
+              <xs:element name="Vol" msprop:Generator_ColumnVarNameInTable="columnVol" msprop:Generator_ColumnPropNameInRow="Vol" msprop:Generator_ColumnPropNameInTable="VolColumn" msprop:Generator_UserColumnName="Vol" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HrgSatuan" msprop:Generator_ColumnVarNameInTable="columnHrgSatuan" msprop:Generator_ColumnPropNameInRow="HrgSatuan" msprop:Generator_ColumnPropNameInTable="HrgSatuanColumn" msprop:Generator_UserColumnName="HrgSatuan" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalTerserap" msprop:Generator_ColumnVarNameInTable="columnTotalTerserap" msprop:Generator_ColumnPropNameInRow="TotalTerserap" msprop:Generator_ColumnPropNameInTable="TotalTerserapColumn" msprop:Generator_UserColumnName="TotalTerserap" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UserEntry" msprop:Generator_ColumnVarNameInTable="columnUserEntry" msprop:Generator_ColumnPropNameInRow="UserEntry" msprop:Generator_ColumnPropNameInTable="UserEntryColumn" msprop:Generator_UserColumnName="UserEntry" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeEntry" msprop:Generator_ColumnVarNameInTable="columnTimeEntry" msprop:Generator_ColumnPropNameInRow="TimeEntry" msprop:Generator_ColumnPropNameInTable="TimeEntryColumn" msprop:Generator_UserColumnName="TimeEntry" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RekapRAP" msprop:Generator_TableClassName="RekapRAPDataTable" msprop:Generator_TableVarName="tableRekapRAP" msprop:Generator_TablePropName="RekapRAP" msprop:Generator_RowDeletingName="RekapRAPRowDeleting" msprop:Generator_RowChangingName="RekapRAPRowChanging" msprop:Generator_RowEvHandlerName="RekapRAPRowChangeEventHandler" msprop:Generator_RowDeletedName="RekapRAPRowDeleted" msprop:Generator_UserTableName="RekapRAP" msprop:Generator_RowChangedName="RekapRAPRowChanged" msprop:Generator_RowEvArgName="RekapRAPRowChangeEvent" msprop:Generator_RowClassName="RekapRAPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KdRAP" msprop:Generator_ColumnVarNameInTable="columnKdRAP" msprop:Generator_ColumnPropNameInRow="KdRAP" msprop:Generator_ColumnPropNameInTable="KdRAPColumn" msprop:Generator_UserColumnName="KdRAP" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipe" msprop:Generator_ColumnVarNameInTable="columnTipe" msprop:Generator_ColumnPropNameInRow="Tipe" msprop:Generator_ColumnPropNameInTable="TipeColumn" msprop:Generator_UserColumnName="Tipe" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" msprop:Generator_UserColumnName="Uraian" type="xs:string" minOccurs="0" />
+              <xs:element name="Uom" msprop:Generator_ColumnVarNameInTable="columnUom" msprop:Generator_ColumnPropNameInRow="Uom" msprop:Generator_ColumnPropNameInTable="UomColumn" msprop:Generator_UserColumnName="Uom" type="xs:string" minOccurs="0" />
+              <xs:element name="Vol1" msprop:Generator_ColumnVarNameInTable="columnVol1" msprop:Generator_ColumnPropNameInRow="Vol1" msprop:Generator_ColumnPropNameInTable="Vol1Column" msprop:Generator_UserColumnName="Vol1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vol2" msprop:Generator_ColumnVarNameInTable="columnVol2" msprop:Generator_ColumnPropNameInRow="Vol2" msprop:Generator_ColumnPropNameInTable="Vol2Column" msprop:Generator_UserColumnName="Vol2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HrgSatuan1" msprop:Generator_ColumnVarNameInTable="columnHrgSatuan1" msprop:Generator_ColumnPropNameInRow="HrgSatuan1" msprop:Generator_ColumnPropNameInTable="HrgSatuan1Column" msprop:Generator_UserColumnName="HrgSatuan1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HrgSatuan2" msprop:Generator_ColumnVarNameInTable="columnHrgSatuan2" msprop:Generator_ColumnPropNameInRow="HrgSatuan2" msprop:Generator_ColumnPropNameInTable="HrgSatuan2Column" msprop:Generator_UserColumnName="HrgSatuan2" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

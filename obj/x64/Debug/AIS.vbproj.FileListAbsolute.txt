@@ -1,0 +1,9 @@
+E:\Alkatec_ASP.NET\AIS\AIS\bin\x64\Debug\AIS.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\x64\Debug\AIS.pdb
+E:\Alkatec_ASP.NET\AIS\AIS\bin\x64\Debug\AIS.xml
+E:\Alkatec_ASP.NET\AIS\AIS\obj\x64\Debug\AIS.Resources.resources
+E:\Alkatec_ASP.NET\AIS\AIS\obj\x64\Debug\AIS.vbproj.GenerateResource.Cache
+E:\Alkatec_ASP.NET\AIS\AIS\obj\x64\Debug\AIS.dll.licenses
+E:\Alkatec_ASP.NET\AIS\AIS\obj\x64\Debug\AIS.dll
+E:\Alkatec_ASP.NET\AIS\AIS\obj\x64\Debug\AIS.xml
+E:\Alkatec_ASP.NET\AIS\AIS\obj\x64\Debug\AIS.pdb

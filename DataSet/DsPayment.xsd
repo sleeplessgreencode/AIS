@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsPayment" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsPayment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsPayment" msprop:Generator_UserDSName="DsPayment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Payment" msprop:Generator_TableClassName="PaymentDataTable" msprop:Generator_TableVarName="tablePayment" msprop:Generator_TablePropName="Payment" msprop:Generator_RowDeletingName="PaymentRowDeleting" msprop:Generator_RowChangingName="PaymentRowChanging" msprop:Generator_RowEvHandlerName="PaymentRowChangeEventHandler" msprop:Generator_RowDeletedName="PaymentRowDeleted" msprop:Generator_UserTableName="Payment" msprop:Generator_RowChangedName="PaymentRowChanged" msprop:Generator_RowEvArgName="PaymentRowChangeEvent" msprop:Generator_RowClassName="PaymentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TglBayar" msprop:Generator_ColumnVarNameInTable="columnTglBayar" msprop:Generator_ColumnPropNameInRow="TglBayar" msprop:Generator_ColumnPropNameInTable="TglBayarColumn" msprop:Generator_UserColumnName="TglBayar" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TipeForm" msprop:Generator_ColumnVarNameInTable="columnTipeForm" msprop:Generator_ColumnPropNameInRow="TipeForm" msprop:Generator_ColumnPropNameInTable="TipeFormColumn" msprop:Generator_UserColumnName="TipeForm" type="xs:string" minOccurs="0" />
+              <xs:element name="Alokasi" msprop:Generator_ColumnVarNameInTable="columnAlokasi" msprop:Generator_ColumnPropNameInRow="Alokasi" msprop:Generator_ColumnPropNameInTable="AlokasiColumn" msprop:Generator_UserColumnName="Alokasi" type="xs:string" minOccurs="0" />
+              <xs:element name="NoPD" msprop:Generator_ColumnVarNameInTable="columnNoPD" msprop:Generator_ColumnPropNameInRow="NoPD" msprop:Generator_ColumnPropNameInTable="NoPDColumn" msprop:Generator_UserColumnName="NoPD" type="xs:string" minOccurs="0" />
+              <xs:element name="JobNo" msprop:Generator_ColumnVarNameInTable="columnJobNo" msprop:Generator_ColumnPropNameInRow="JobNo" msprop:Generator_ColumnPropNameInTable="JobNoColumn" msprop:Generator_UserColumnName="JobNo" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaTerima" msprop:Generator_ColumnVarNameInTable="columnNamaTerima" msprop:Generator_ColumnPropNameInRow="NamaTerima" msprop:Generator_ColumnPropNameInTable="NamaTerimaColumn" msprop:Generator_UserColumnName="NamaTerima" type="xs:string" minOccurs="0" />
+              <xs:element name="BankTerima" msprop:Generator_ColumnVarNameInTable="columnBankTerima" msprop:Generator_ColumnPropNameInRow="BankTerima" msprop:Generator_ColumnPropNameInTable="BankTerimaColumn" msprop:Generator_UserColumnName="BankTerima" type="xs:string" minOccurs="0" />
+              <xs:element name="NoRekTerima" msprop:Generator_ColumnVarNameInTable="columnNoRekTerima" msprop:Generator_ColumnPropNameInRow="NoRekTerima" msprop:Generator_ColumnPropNameInTable="NoRekTerimaColumn" msprop:Generator_UserColumnName="NoRekTerima" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalBayar" msprop:Generator_ColumnVarNameInTable="columnTotalBayar" msprop:Generator_ColumnPropNameInRow="TotalBayar" msprop:Generator_ColumnPropNameInTable="TotalBayarColumn" msprop:Generator_UserColumnName="TotalBayar" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CaraBayar" msprop:Generator_ColumnVarNameInTable="columnCaraBayar" msprop:Generator_ColumnPropNameInRow="CaraBayar" msprop:Generator_ColumnPropNameInTable="CaraBayarColumn" msprop:Generator_UserColumnName="CaraBayar" type="xs:string" minOccurs="0" />
+              <xs:element name="BankKirim" msprop:Generator_ColumnVarNameInTable="columnBankKirim" msprop:Generator_ColumnPropNameInRow="BankKirim" msprop:Generator_ColumnPropNameInTable="BankKirimColumn" msprop:Generator_UserColumnName="BankKirim" type="xs:string" minOccurs="0" />
+              <xs:element name="NoRekKirim" msprop:Generator_ColumnVarNameInTable="columnNoRekKirim" msprop:Generator_ColumnPropNameInRow="NoRekKirim" msprop:Generator_ColumnPropNameInTable="NoRekKirimColumn" msprop:Generator_UserColumnName="NoRekKirim" type="xs:string" minOccurs="0" />
+              <xs:element name="JenisTrf" msprop:Generator_ColumnVarNameInTable="columnJenisTrf" msprop:Generator_ColumnPropNameInRow="JenisTrf" msprop:Generator_ColumnPropNameInTable="JenisTrfColumn" msprop:Generator_UserColumnName="JenisTrf" type="xs:string" minOccurs="0" />
+              <xs:element name="NoKO" msprop:Generator_ColumnVarNameInTable="columnNoKO" msprop:Generator_ColumnPropNameInRow="NoKO" msprop:Generator_ColumnPropNameInTable="NoKOColumn" msprop:Generator_UserColumnName="NoKO" type="xs:string" minOccurs="0" />
+              <xs:element name="KeteranganBayar" msprop:Generator_ColumnVarNameInTable="columnKeteranganBayar" msprop:Generator_ColumnPropNameInRow="KeteranganBayar" msprop:Generator_ColumnPropNameInTable="KeteranganBayarColumn" msprop:Generator_UserColumnName="KeteranganBayar" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

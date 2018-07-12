@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsPO" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsPO" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsPO" msprop:Generator_UserDSName="DsPO">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KoDtl" msprop:Generator_TableClassName="KoDtlDataTable" msprop:Generator_TableVarName="tableKoDtl" msprop:Generator_TablePropName="KoDtl" msprop:Generator_RowDeletingName="KoDtlRowDeleting" msprop:Generator_RowChangingName="KoDtlRowChanging" msprop:Generator_RowEvHandlerName="KoDtlRowChangeEventHandler" msprop:Generator_RowDeletedName="KoDtlRowDeleted" msprop:Generator_UserTableName="KoDtl" msprop:Generator_RowChangedName="KoDtlRowChanged" msprop:Generator_RowEvArgName="KoDtlRowChangeEvent" msprop:Generator_RowClassName="KoDtlRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoUrut" msprop:Generator_ColumnVarNameInTable="columnNoUrut" msprop:Generator_ColumnPropNameInRow="NoUrut" msprop:Generator_ColumnPropNameInTable="NoUrutColumn" msprop:Generator_UserColumnName="NoUrut" type="xs:string" minOccurs="0" />
+              <xs:element name="KdRAP" msprop:Generator_ColumnVarNameInTable="columnKdRAP" msprop:Generator_ColumnPropNameInRow="KdRAP" msprop:Generator_ColumnPropNameInTable="KdRAPColumn" msprop:Generator_UserColumnName="KdRAP" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" msprop:Generator_UserColumnName="Uraian" type="xs:string" minOccurs="0" />
+              <xs:element name="Vol" msprop:Generator_ColumnVarNameInTable="columnVol" msprop:Generator_ColumnPropNameInRow="Vol" msprop:Generator_ColumnPropNameInTable="VolColumn" msprop:Generator_UserColumnName="Vol" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Uom" msprop:Generator_ColumnVarNameInTable="columnUom" msprop:Generator_ColumnPropNameInRow="Uom" msprop:Generator_ColumnPropNameInTable="UomColumn" msprop:Generator_UserColumnName="Uom" type="xs:string" minOccurs="0" />
+              <xs:element name="HrgSatuan" msprop:Generator_ColumnVarNameInTable="columnHrgSatuan" msprop:Generator_ColumnPropNameInRow="HrgSatuan" msprop:Generator_ColumnPropNameInTable="HrgSatuanColumn" msprop:Generator_UserColumnName="HrgSatuan" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

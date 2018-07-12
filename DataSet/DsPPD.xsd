@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsPPD" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsPPD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsPPD" msprop:Generator_UserDSName="DsPPD">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PPD" msprop:Generator_TableClassName="PPDDataTable" msprop:Generator_TableVarName="tablePPD" msprop:Generator_RowChangedName="PPDRowChanged" msprop:Generator_TablePropName="PPD" msprop:Generator_RowDeletingName="PPDRowDeleting" msprop:Generator_RowChangingName="PPDRowChanging" msprop:Generator_RowEvHandlerName="PPDRowChangeEventHandler" msprop:Generator_RowDeletedName="PPDRowDeleted" msprop:Generator_RowClassName="PPDRow" msprop:Generator_UserTableName="PPD" msprop:Generator_RowEvArgName="PPDRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Alokasi" msprop:Generator_ColumnVarNameInTable="columnAlokasi" msprop:Generator_ColumnPropNameInRow="Alokasi" msprop:Generator_ColumnPropNameInTable="AlokasiColumn" msprop:Generator_UserColumnName="Alokasi" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalRAP" msprop:Generator_ColumnVarNameInTable="columnTotalRAP" msprop:Generator_ColumnPropNameInRow="TotalRAP" msprop:Generator_ColumnPropNameInTable="TotalRAPColumn" msprop:Generator_UserColumnName="TotalRAP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PJLastWeek" msprop:Generator_ColumnVarNameInTable="columnPJLastWeek" msprop:Generator_ColumnPropNameInRow="PJLastWeek" msprop:Generator_ColumnPropNameInTable="PJLastWeekColumn" msprop:Generator_UserColumnName="PJLastWeek" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PJCurrentWeek" msprop:Generator_ColumnVarNameInTable="columnPJCurrentWeek" msprop:Generator_ColumnPropNameInRow="PJCurrentWeek" msprop:Generator_ColumnPropNameInTable="PJCurrentWeekColumn" msprop:Generator_UserColumnName="PJCurrentWeek" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

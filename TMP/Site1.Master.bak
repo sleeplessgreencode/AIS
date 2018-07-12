@@ -1,0 +1,111 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="AIS.Site1" %>
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        html, body {font-family: 'Segoe UI'; font-size: 12px;}
+        .hiddencol {display:none;}
+        .font1 {font-family:'Segoe UI'; font-size: 12px;}
+        .hover_row{background-color: #A1DCF2;}
+        .title {font-family: 'Segoe UI Light'; font-size: 30px;}
+    </style>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="font1">   
+        <div align="right" 
+            style="border-bottom-style: solid; border-bottom-width: 3px; border-bottom-color: #176FFF; padding-bottom: 5px;">
+            <asp:Label ID="lblMaster" runat="server" Text="Welcome "></asp:Label>
+        </div>            
+    </div>
+    <div>
+        <dx:ASPxMenu ID="Menu1" runat="server" AutoPostBack="True" Theme="Moderno" AppearAfter="50" 
+        DisappearAfter="300" EnableAnimation="True" BackColor="#C6DBFF" 
+            SeparatorWidth="1px">
+        <Items>
+            <dx:MenuItem Text="Basic Data" Name="#Daftar"> 
+                <Items>
+                <dx:MenuItem Text="Alokasi" Name="FrmAlokasi.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Bank" Name="FrmBank.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Rekening Pengirim" Name="FrmRek.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Vendor" Name="FrmVendor.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Tipe Form" Name="FrmTipeForm.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Kategori" Name="FrmKategori.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Proposal" Name="FrmProposal.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Job" Name="FrmKontrak.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Entry" Name="#Entry">
+                <Items>
+                <dx:MenuItem Text="RAB" Name="FrmRAB.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="RAP" Name="FrmRAP.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Procurement" Name="#Procurement1">
+                    <Items>
+                    <dx:MenuItem Text="Kontrak/Purchase Order" Name="FrmKO.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Kontrak/Purchase Order" Name="FrmApprovalKO.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="KO Addendum/Revisi" Name="FrmKOAddendum.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Penutupan Kontrak" Name="FrmClosingKO.aspx"></dx:MenuItem>
+                    </Items>
+                </dx:MenuItem>
+                <dx:MenuItem Text="PD/PJ" Name="#Finance1">
+                    <Items>
+                    <dx:MenuItem Text="Permintaan Dana" Name="FrmPD.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Permintaan Dana (KK)" Name="FrmApprovalPD_KK.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Permintaan Dana (KT)" Name="FrmApprovalPD_KT.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Permintaan Dana (DP)" Name="FrmApprovalPD_DP.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Permintaan Dana (TBP)" Name="FrmApprovalPD_TBP.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Permintaan Dana (DK)" Name="FrmApprovalPD_DK.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Reject Permintaan Dana" Name="FrmRejectPD.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Pertanggungjawaban Dana" Name="FrmPJ.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Pertanggungjawaban Dana (KK)" Name="FrmApprovalPJ.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Pembayaran Permintaan Dana" Name="FrmPayPD.aspx"></dx:MenuItem>
+                    </Items>
+                </dx:MenuItem>
+                <dx:MenuItem Text="Progress Fisik" Name="FrmRPPM1.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Penerimaan Termin" Name="FrmTermin.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Pengembalian Jaminan" Name="FrmJaminan.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Report" Name="#Report">
+                <Items>
+                <dx:MenuItem Text="Procurement" Name="#Procurement2">
+                    <Items>
+                    <dx:MenuItem Text="Summary Rekap KO" Name="FrmRekapKO.aspx"></dx:MenuItem>
+                    </Items>
+                </dx:MenuItem>
+                <dx:MenuItem Text="PD/PJ" Name="#Finance2">
+                    <Items>
+                    <dx:MenuItem Text="Daftar Permintaan &amp; Pertanggungjawaban Dana" Name="FrmDPPD.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Rekap Pembayaran" Name="FrmRekapPayment.aspx"></dx:MenuItem>                    
+                    </Items>
+                </dx:MenuItem>
+                <dx:MenuItem Text="Realisasi Penerimaan Termin" Name="FrmRealisasiTermin.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Tools" Name="#Tools">                    
+                <Items>
+                <dx:MenuItem Text="Tracking PD" Name="FrmTrackPD.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Setup Akses" Name="FrmSetupAkses.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Override Saldo" Name="FrmOverrideSaldo.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Change Password" Name="FrmChangePasswd.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Log Out" Name="Default.aspx"></dx:MenuItem>
+        </Items>
+        </dx:ASPxMenu>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

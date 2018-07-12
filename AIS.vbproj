@@ -1,0 +1,1916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{2473A68D-B857-473B-ACAC-791B1302964D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AIS</RootNamespace>
+    <AssemblyName>AIS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>AIS.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>AIS.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>AIS.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>AIS.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Web, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaBuilders.WebControls, Version=0.9.4.21920, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MetaBuilders.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="msgbox, Version=1.0.1704.38191, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\msgbox.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrmAlokasi.aspx" />
+    <Content Include="FrmApprovalKO.aspx" />
+    <Content Include="FrmApprovalPD_DK.aspx" />
+    <Content Include="FrmApprovalPD_DP.aspx" />
+    <Content Include="FrmApprovalPD_KK.aspx" />
+    <Content Include="FrmApprovalPD_KT.aspx" />
+    <Content Include="FrmApprovalPJ.aspx" />
+    <Content Include="FrmBank.aspx" />
+    <Content Include="FrmBukuBesar.aspx" />
+    <Content Include="FrmBukuTambahan.aspx" />
+    <Content Include="FrmChangePasswd.aspx" />
+    <Content Include="FrmClosingKO.aspx" />
+    <Content Include="FrmCOA.aspx" />
+    <Content Include="FrmCOAX.aspx" />
+    <Content Include="FrmDPPD.aspx" />
+    <Content Include="FrmEntryKO.aspx" />
+    <Content Include="FrmEntryKontrak.aspx" />
+    <Content Include="FrmEntryPayment.aspx" />
+    <Content Include="FrmEntryPD.aspx" />
+    <Content Include="FrmEntryPJ.aspx" />
+    <Content Include="FrmEntryPO.aspx" />
+    <Content Include="FrmEntryRAP.aspx" />
+    <Content Include="FrmEntrySetup.aspx" />
+    <Content Include="FrmExportJurnal.aspx" />
+    <Content Include="FrmJaminan.aspx" />
+    <Content Include="FrmJurnal.aspx" />
+    <Content Include="FrmJurnalApproval.aspx" />
+    <Content Include="FrmKategori.aspx" />
+    <Content Include="FrmKO.aspx" />
+    <Content Include="FrmKOAddendum.aspx" />
+    <Content Include="FrmKontrak.aspx" />
+    <Content Include="FrmLK.aspx" />
+    <Content Include="FrmLR.aspx" />
+    <Content Include="FrmMain.aspx" />
+    <Content Include="FrmNotaAkuntansi.aspx" />
+    <Content Include="FrmPD.aspx" />
+    <Content Include="FrmPiuProgress.aspx" />
+    <Content Include="FrmPJ.aspx" />
+    <Content Include="FrmProposal.aspx" />
+    <Content Include="FrmRAP.aspx" />
+    <Content Include="FrmRealisasiTermin.aspx" />
+    <Content Include="FrmRejectPD.aspx" />
+    <Content Include="FrmRek.aspx" />
+    <Content Include="FrmRekapKO.aspx" />
+    <Content Include="FrmRekapKOProject.aspx" />
+    <Content Include="FrmRekapPayment.aspx" />
+    <Content Include="FrmRekapRAP.aspx" />
+    <Content Include="FrmResumePK.aspx" />
+    <Content Include="FrmRPPM.aspx" />
+    <Content Include="FrmRptBB.aspx" />
+    <Content Include="FrmRptBT.aspx" />
+    <Content Include="FrmRptDPPD.aspx" />
+    <Content Include="FrmRptLK.aspx" />
+    <Content Include="FrmRptLR.aspx" />
+    <Content Include="FrmRptNA.aspx" />
+    <Content Include="FrmRptNeracaMutasi.aspx" />
+    <Content Include="FrmRptPD.aspx" />
+    <Content Include="FrmRptPenyerapanRAP.aspx" />
+    <Content Include="FrmRptPJ.aspx" />
+    <Content Include="FrmRptPO.aspx" />
+    <Content Include="FrmRptRAP.aspx" />
+    <Content Include="FrmRptRekapPayment.aspx" />
+    <Content Include="FrmRptRekapPPD.aspx" />
+    <Content Include="FrmRptRekapRAP.aspx" />
+    <Content Include="FrmRptSummaryKontrak.aspx" />
+    <Content Include="FrmRptTermin.aspx" />
+    <Content Include="FrmSaldo.aspx" />
+    <Content Include="FrmSetupAkses.aspx" />
+    <Content Include="FrmSPR.aspx" />
+    <Content Include="FrmTermin.aspx" />
+    <Content Include="FrmTipeForm.aspx" />
+    <Content Include="FrmTrackPD.aspx" />
+    <Content Include="FrmVendor.aspx" />
+    <Content Include="Images\login-bg.jpg" />
+    <Content Include="Images\reject.jpg" />
+    <Content Include="js\amcharts\amcharts.js" />
+    <Content Include="js\amcharts\funnel.js" />
+    <Content Include="js\amcharts\gantt.js" />
+    <Content Include="js\amcharts\gauge.js" />
+    <Content Include="js\amcharts\images\dragIcon.gif" />
+    <Content Include="js\amcharts\images\dragIconBlack.gif" />
+    <Content Include="js\amcharts\images\dragIconH.gif" />
+    <Content Include="js\amcharts\images\dragIconHBlack.gif" />
+    <Content Include="js\amcharts\images\dragIconRectBig.png" />
+    <Content Include="js\amcharts\images\dragIconRectBig.svg" />
+    <Content Include="js\amcharts\images\dragIconRectBigBlack.png" />
+    <Content Include="js\amcharts\images\dragIconRectBigBlack.svg" />
+    <Content Include="js\amcharts\images\dragIconRectBigBlackH.png" />
+    <Content Include="js\amcharts\images\dragIconRectBigBlackH.svg" />
+    <Content Include="js\amcharts\images\dragIconRectBigH.png" />
+    <Content Include="js\amcharts\images\dragIconRectBigH.svg" />
+    <Content Include="js\amcharts\images\dragIconRectSmall.png" />
+    <Content Include="js\amcharts\images\dragIconRectSmall.svg" />
+    <Content Include="js\amcharts\images\dragIconRectSmallBlack.png" />
+    <Content Include="js\amcharts\images\dragIconRectSmallBlack.svg" />
+    <Content Include="js\amcharts\images\dragIconRectSmallBlackH.png" />
+    <Content Include="js\amcharts\images\dragIconRectSmallBlackH.svg" />
+    <Content Include="js\amcharts\images\dragIconRectSmallH.png" />
+    <Content Include="js\amcharts\images\dragIconRectSmallH.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundBig.png" />
+    <Content Include="js\amcharts\images\dragIconRoundBig.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundBigBlack.png" />
+    <Content Include="js\amcharts\images\dragIconRoundBigBlack.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundBigBlackH.png" />
+    <Content Include="js\amcharts\images\dragIconRoundBigBlackH.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundBigH.png" />
+    <Content Include="js\amcharts\images\dragIconRoundBigH.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundSmall.png" />
+    <Content Include="js\amcharts\images\dragIconRoundSmall.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundSmallBlack.png" />
+    <Content Include="js\amcharts\images\dragIconRoundSmallBlack.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundSmallBlackH.png" />
+    <Content Include="js\amcharts\images\dragIconRoundSmallBlackH.svg" />
+    <Content Include="js\amcharts\images\dragIconRoundSmallH.png" />
+    <Content Include="js\amcharts\images\dragIconRoundSmallH.svg" />
+    <Content Include="js\amcharts\images\eraserIcon.svg" />
+    <Content Include="js\amcharts\images\eraserIconH.svg" />
+    <Content Include="js\amcharts\images\export.png" />
+    <Content Include="js\amcharts\images\exportWhite.png" />
+    <Content Include="js\amcharts\images\lens.png" />
+    <Content Include="js\amcharts\images\lens.svg" />
+    <Content Include="js\amcharts\images\lensWhite.png" />
+    <Content Include="js\amcharts\images\lensWhite.svg" />
+    <Content Include="js\amcharts\images\lensWhite_old.png" />
+    <Content Include="js\amcharts\images\lens_old.png" />
+    <Content Include="js\amcharts\images\pencilIcon.svg" />
+    <Content Include="js\amcharts\images\pencilIconH.svg" />
+    <Content Include="js\amcharts\images\xIcon.svg" />
+    <Content Include="js\amcharts\images\xIconH.svg" />
+    <Content Include="js\amcharts\lang\az.js" />
+    <Content Include="js\amcharts\lang\bg.js" />
+    <Content Include="js\amcharts\lang\cs.js" />
+    <Content Include="js\amcharts\lang\de.js" />
+    <Content Include="js\amcharts\lang\es.js" />
+    <Content Include="js\amcharts\lang\fi.js" />
+    <Content Include="js\amcharts\lang\fo.js" />
+    <Content Include="js\amcharts\lang\fr.js" />
+    <Content Include="js\amcharts\lang\hr.js" />
+    <Content Include="js\amcharts\lang\hu.js" />
+    <Content Include="js\amcharts\lang\id.js" />
+    <Content Include="js\amcharts\lang\is.js" />
+    <Content Include="js\amcharts\lang\it.js" />
+    <Content Include="js\amcharts\lang\ja.js" />
+    <Content Include="js\amcharts\lang\ko.js" />
+    <Content Include="js\amcharts\lang\lt.js" />
+    <Content Include="js\amcharts\lang\lv.js" />
+    <Content Include="js\amcharts\lang\mk.js" />
+    <Content Include="js\amcharts\lang\mn.js" />
+    <Content Include="js\amcharts\lang\mt.js" />
+    <Content Include="js\amcharts\lang\nl.js" />
+    <Content Include="js\amcharts\lang\no.js" />
+    <Content Include="js\amcharts\lang\pl.js" />
+    <Content Include="js\amcharts\lang\pt.js" />
+    <Content Include="js\amcharts\lang\ro.js" />
+    <Content Include="js\amcharts\lang\ru.js" />
+    <Content Include="js\amcharts\lang\rw.js" />
+    <Content Include="js\amcharts\lang\sk.js" />
+    <Content Include="js\amcharts\lang\sl.js" />
+    <Content Include="js\amcharts\lang\so.js" />
+    <Content Include="js\amcharts\lang\th.js" />
+    <Content Include="js\amcharts\lang\tr.js" />
+    <Content Include="js\amcharts\lang\zh.js" />
+    <Content Include="js\amcharts\patterns\black\pattern1.png" />
+    <Content Include="js\amcharts\patterns\black\pattern10.png" />
+    <Content Include="js\amcharts\patterns\black\pattern11.png" />
+    <Content Include="js\amcharts\patterns\black\pattern12.png" />
+    <Content Include="js\amcharts\patterns\black\pattern13.png" />
+    <Content Include="js\amcharts\patterns\black\pattern14.png" />
+    <Content Include="js\amcharts\patterns\black\pattern15.png" />
+    <Content Include="js\amcharts\patterns\black\pattern16.png" />
+    <Content Include="js\amcharts\patterns\black\pattern17.png" />
+    <Content Include="js\amcharts\patterns\black\pattern18.png" />
+    <Content Include="js\amcharts\patterns\black\pattern19.png" />
+    <Content Include="js\amcharts\patterns\black\pattern2.png" />
+    <Content Include="js\amcharts\patterns\black\pattern20.png" />
+    <Content Include="js\amcharts\patterns\black\pattern21.png" />
+    <Content Include="js\amcharts\patterns\black\pattern3.png" />
+    <Content Include="js\amcharts\patterns\black\pattern4.png" />
+    <Content Include="js\amcharts\patterns\black\pattern5.png" />
+    <Content Include="js\amcharts\patterns\black\pattern6.png" />
+    <Content Include="js\amcharts\patterns\black\pattern7.png" />
+    <Content Include="js\amcharts\patterns\black\pattern8.png" />
+    <Content Include="js\amcharts\patterns\black\pattern9.png" />
+    <Content Include="js\amcharts\patterns\chalk\pattern1.jpg" />
+    <Content Include="js\amcharts\patterns\chalk\pattern1r.jpg" />
+    <Content Include="js\amcharts\patterns\chalk\pattern2.jpg" />
+    <Content Include="js\amcharts\patterns\chalk\pattern3.jpg" />
+    <Content Include="js\amcharts\patterns\chalk\pattern4.jpg" />
+    <Content Include="js\amcharts\patterns\chalk\pattern5.jpg" />
+    <Content Include="js\amcharts\patterns\chalk\pattern6.jpg" />
+    <Content Include="js\amcharts\patterns\white\pattern1.png" />
+    <Content Include="js\amcharts\patterns\white\pattern10.png" />
+    <Content Include="js\amcharts\patterns\white\pattern11.png" />
+    <Content Include="js\amcharts\patterns\white\pattern12.png" />
+    <Content Include="js\amcharts\patterns\white\pattern13.png" />
+    <Content Include="js\amcharts\patterns\white\pattern14.png" />
+    <Content Include="js\amcharts\patterns\white\pattern15.png" />
+    <Content Include="js\amcharts\patterns\white\pattern16.png" />
+    <Content Include="js\amcharts\patterns\white\pattern17.png" />
+    <Content Include="js\amcharts\patterns\white\pattern18.png" />
+    <Content Include="js\amcharts\patterns\white\pattern19.png" />
+    <Content Include="js\amcharts\patterns\white\pattern2.png" />
+    <Content Include="js\amcharts\patterns\white\pattern20.png" />
+    <Content Include="js\amcharts\patterns\white\pattern21.png" />
+    <Content Include="js\amcharts\patterns\white\pattern3.png" />
+    <Content Include="js\amcharts\patterns\white\pattern4.png" />
+    <Content Include="js\amcharts\patterns\white\pattern5.png" />
+    <Content Include="js\amcharts\patterns\white\pattern6.png" />
+    <Content Include="js\amcharts\patterns\white\pattern7.png" />
+    <Content Include="js\amcharts\patterns\white\pattern8.png" />
+    <Content Include="js\amcharts\patterns\white\pattern9.png" />
+    <Content Include="js\amcharts\pie.js" />
+    <Content Include="js\amcharts\plugins\animate\animate.js" />
+    <Content Include="js\amcharts\plugins\animate\animate.min.js" />
+    <Content Include="js\amcharts\plugins\animate\examples\funnel.html" />
+    <Content Include="js\amcharts\plugins\animate\examples\pie.html" />
+    <Content Include="js\amcharts\plugins\animate\examples\radar.html" />
+    <Content Include="js\amcharts\plugins\animate\examples\serial_column.html" />
+    <Content Include="js\amcharts\plugins\animate\examples\serial_line.html" />
+    <Content Include="js\amcharts\plugins\animate\examples\xy.html" />
+    <Content Include="js\amcharts\plugins\animate\index.js" />
+    <Content Include="js\amcharts\plugins\dataloader\dataloader.js" />
+    <Content Include="js\amcharts\plugins\dataloader\dataloader.min.js" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\gantt_json.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\gauge_json.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\map_json.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\map_json_external_function.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\pie_csv.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\pie_json.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\serial2_json.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\serial_csv.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\serial_json.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\serial_with_dynamic_graphs.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\stock_csv_data_and_events.html" />
+    <Content Include="js\amcharts\plugins\dataloader\examples\stock_csv_progressbar.html" />
+    <Content Include="js\amcharts\plugins\dataloader\index.js" />
+    <Content Include="js\amcharts\plugins\dataloader\lang\cs.js" />
+    <Content Include="js\amcharts\plugins\dataloader\lang\en.js" />
+    <Content Include="js\amcharts\plugins\dataloader\lang\fr.js" />
+    <Content Include="js\amcharts\plugins\dataloader\lang\lt.js" />
+    <Content Include="js\amcharts\plugins\dataloader\license.txt" />
+    <Content Include="js\amcharts\plugins\export\examples\advanced.html" />
+    <Content Include="js\amcharts\plugins\export\examples\export.config.advanced.js" />
+    <Content Include="js\amcharts\plugins\export\examples\export.config.default.js" />
+    <Content Include="js\amcharts\plugins\export\examples\funnel.html" />
+    <Content Include="js\amcharts\plugins\export\examples\gantt.html" />
+    <Content Include="js\amcharts\plugins\export\examples\gauge.html" />
+    <Content Include="js\amcharts\plugins\export\examples\images\bicycle.png" />
+    <Content Include="js\amcharts\plugins\export\examples\images\car.png" />
+    <Content Include="js\amcharts\plugins\export\examples\images\motorcycle.png" />
+    <Content Include="js\amcharts\plugins\export\examples\index.html" />
+    <Content Include="js\amcharts\plugins\export\examples\map.html" />
+    <Content Include="js\amcharts\plugins\export\examples\pie1.html" />
+    <Content Include="js\amcharts\plugins\export\examples\pie2.html" />
+    <Content Include="js\amcharts\plugins\export\examples\pie3.html" />
+    <Content Include="js\amcharts\plugins\export\examples\pie4.html" />
+    <Content Include="js\amcharts\plugins\export\examples\radar.html" />
+    <Content Include="js\amcharts\plugins\export\examples\serial1.html" />
+    <Content Include="js\amcharts\plugins\export\examples\serial2.html" />
+    <Content Include="js\amcharts\plugins\export\examples\serial3.html" />
+    <Content Include="js\amcharts\plugins\export\examples\stock.html" />
+    <Content Include="js\amcharts\plugins\export\examples\xy.html" />
+    <Content Include="js\amcharts\plugins\export\export.css" />
+    <Content Include="js\amcharts\plugins\export\export.js" />
+    <Content Include="js\amcharts\plugins\export\export.min.js" />
+    <Content Include="js\amcharts\plugins\export\index.js" />
+    <Content Include="js\amcharts\plugins\export\lang\cs.js" />
+    <Content Include="js\amcharts\plugins\export\lang\de.js" />
+    <Content Include="js\amcharts\plugins\export\lang\en.js" />
+    <Content Include="js\amcharts\plugins\export\lang\es.js" />
+    <Content Include="js\amcharts\plugins\export\lang\fr.js" />
+    <Content Include="js\amcharts\plugins\export\lang\hu.js" />
+    <Content Include="js\amcharts\plugins\export\lang\it.js" />
+    <Content Include="js\amcharts\plugins\export\lang\ko.js" />
+    <Content Include="js\amcharts\plugins\export\lang\lt.js" />
+    <Content Include="js\amcharts\plugins\export\lang\pl.js" />
+    <Content Include="js\amcharts\plugins\export\lang\pt.js" />
+    <Content Include="js\amcharts\plugins\export\lang\tr.js" />
+    <Content Include="js\amcharts\plugins\export\lang\zh.js" />
+    <Content Include="js\amcharts\plugins\export\libs\blob.js\blob.js" />
+    <Content Include="js\amcharts\plugins\export\libs\fabric.js\fabric.js" />
+    <Content Include="js\amcharts\plugins\export\libs\fabric.js\fabric.min.js" />
+    <Content Include="js\amcharts\plugins\export\libs\FileSaver.js\FileSaver.js" />
+    <Content Include="js\amcharts\plugins\export\libs\FileSaver.js\FileSaver.min.js" />
+    <Content Include="js\amcharts\plugins\export\libs\jszip\jszip.js" />
+    <Content Include="js\amcharts\plugins\export\libs\jszip\jszip.min.js" />
+    <Content Include="js\amcharts\plugins\export\libs\pdfmake\pdfmake.js" />
+    <Content Include="js\amcharts\plugins\export\libs\pdfmake\pdfmake.min.js" />
+    <Content Include="js\amcharts\plugins\export\libs\pdfmake\vfs_fonts.js" />
+    <Content Include="js\amcharts\plugins\export\libs\xlsx\xlsx.js" />
+    <Content Include="js\amcharts\plugins\export\libs\xlsx\xlsx.min.js" />
+    <Content Include="js\amcharts\plugins\export\shapes\1.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\10.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\11.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\12.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\13.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\14.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\15.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\16.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\17.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\18.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\19.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\2.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\20.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\21.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\22.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\23.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\24.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\25.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\26.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\27.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\28.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\29.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\3.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\30.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\31.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\4.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\5.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\6.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\7.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\8.svg" />
+    <Content Include="js\amcharts\plugins\export\shapes\9.svg" />
+    <Content Include="js\amcharts\plugins\responsive\examples\funnel.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\gantt.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\gauge.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\images\bicycle.png" />
+    <Content Include="js\amcharts\plugins\responsive\examples\images\car.png" />
+    <Content Include="js\amcharts\plugins\responsive\examples\images\motorcycle.png" />
+    <Content Include="js\amcharts\plugins\responsive\examples\index.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\map.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\pie1.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\pie2.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\pie3.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\radar.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\serial1.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\serial2.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\serial3.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\stock.html" />
+    <Content Include="js\amcharts\plugins\responsive\examples\xy.html" />
+    <Content Include="js\amcharts\plugins\responsive\index.js" />
+    <Content Include="js\amcharts\plugins\responsive\license.txt" />
+    <Content Include="js\amcharts\plugins\responsive\responsive.js" />
+    <Content Include="js\amcharts\plugins\responsive\responsive.min.js" />
+    <Content Include="js\amcharts\radar.js" />
+    <Content Include="js\amcharts\serial.js" />
+    <Content Include="js\amcharts\themes\black.js" />
+    <Content Include="js\amcharts\themes\chalk.js" />
+    <Content Include="js\amcharts\themes\dark.js" />
+    <Content Include="js\amcharts\themes\light.js" />
+    <Content Include="js\amcharts\themes\patterns.js" />
+    <Content Include="js\amcharts\xy.js" />
+    <Content Include="js\jquery-3.2.0.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="FrmOverrideSaldo.aspx" />
+    <Content Include="GenQRCode.aspx" />
+    <Content Include="FrmPenyerapanRAP.aspx" />
+    <Content Include="FrmSRPengeluaran.aspx" />
+    <Content Include="FrmRptSRPengeluaran.aspx" />
+    <Content Include="FrmGlReff.aspx" />
+    <Content Include="FrmIdentitas.aspx" />
+    <Content Include="FrmEntryJurnal.aspx" />
+    <Content Include="FrmNeracaMutasi.aspx" />
+    <Content Include="FrmTrackingKO.aspx" />
+    <Content Include="FrmRptTraceKO.aspx" />
+    <Content Include="FrmMessage.aspx" />
+    <Content Include="FrmInvoice.aspx" />
+    <Content Include="FrmInvoiceReceipt.aspx" />
+    <Content Include="FrmItemPrice.aspx" />
+    <Content Include="FrmPayment.aspx" />
+    <Content Include="FrmCancelPO.aspx" />
+    <Content Include="FrmNPWP.aspx" />
+    <Content Include="FrmApprovalTermin.aspx" />
+    <Content Include="FrmCashFlow.aspx" />
+    <Content Include="FrmQueryAP.aspx" />
+    <Content Include="FrmQueryPD.aspx" />
+    <Content Include="FrmQueryJurnal.aspx" />
+    <Content Include="FrmProgress.aspx" />
+    <Content Include="FrmRAPKO.aspx" />
+    <Content Include="FrmRekapHutang.aspx" />
+    <Content Include="FrmQueryTermin.aspx" />
+    <Content Include="FrmRencanaTermin.aspx" />
+    <Content Include="FrmViewPDF.aspx" />
+    <Content Include="FrmHdrDtl.aspx" />
+    <Content Include="Unzip.aspx" />
+    <Content Include="WebService1.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet\DsPD1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPD1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsGL.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsGL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsGL.vb">
+      <DependentUpon>DsGL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPD1.vb">
+      <DependentUpon>DsPD1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsRpt.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsAbsensi.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAbsensi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsAbsensi.vb">
+      <DependentUpon>DsAbsensi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPayment.vb">
+      <DependentUpon>DsPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPPD.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPPD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPPD.vb">
+      <DependentUpon>DsPPD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsRpt.vb">
+      <DependentUpon>DsRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsTermin.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsTermin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsRAP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRAP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsRAP.vb">
+      <DependentUpon>DsRAP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPayment.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsKO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsKO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsKO.vb">
+      <DependentUpon>DsKO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPO.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPD.designer.vb">
+      <DependentUpon>DsPD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPD.vb">
+      <DependentUpon>DsPD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsPO.vb">
+      <DependentUpon>DsPO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsTermin.vb">
+      <DependentUpon>DsTermin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlokasi.aspx.designer.vb">
+      <DependentUpon>FrmAlokasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlokasi.aspx.vb">
+      <DependentUpon>FrmAlokasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalKO.aspx.designer.vb">
+      <DependentUpon>FrmApprovalKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalKO.aspx.vb">
+      <DependentUpon>FrmApprovalKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalPD_DK.aspx.designer.vb">
+      <DependentUpon>FrmApprovalPD_DK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalPD_DK.aspx.vb">
+      <DependentUpon>FrmApprovalPD_DK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalPD_DP.aspx.designer.vb">
+      <DependentUpon>FrmApprovalPD_DP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalPD_DP.aspx.vb">
+      <DependentUpon>FrmApprovalPD_DP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalPD_KK.aspx.designer.vb">
+      <DependentUpon>FrmApprovalPD_KK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalPD_KK.aspx.vb">
+      <DependentUpon>FrmApprovalPD_KK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalPD_KT.aspx.designer.vb">
+      <DependentUpon>FrmApprovalPD_KT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalPD_KT.aspx.vb">
+      <DependentUpon>FrmApprovalPD_KT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalPJ.aspx.designer.vb">
+      <DependentUpon>FrmApprovalPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalPJ.aspx.vb">
+      <DependentUpon>FrmApprovalPJ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmBank.aspx.designer.vb">
+      <DependentUpon>FrmBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBank.aspx.vb">
+      <DependentUpon>FrmBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmBukuBesar.aspx.designer.vb">
+      <DependentUpon>FrmBukuBesar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBukuBesar.aspx.vb">
+      <DependentUpon>FrmBukuBesar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmBukuTambahan.aspx.designer.vb">
+      <DependentUpon>FrmBukuTambahan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBukuTambahan.aspx.vb">
+      <DependentUpon>FrmBukuTambahan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmChangePasswd.aspx.designer.vb">
+      <DependentUpon>FrmChangePasswd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangePasswd.aspx.vb">
+      <DependentUpon>FrmChangePasswd.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmClosingKO.aspx.designer.vb">
+      <DependentUpon>FrmClosingKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClosingKO.aspx.vb">
+      <DependentUpon>FrmClosingKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmCOA.aspx.designer.vb">
+      <DependentUpon>FrmCOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCOA.aspx.vb">
+      <DependentUpon>FrmCOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmCOAX.aspx.designer.vb">
+      <DependentUpon>FrmCOAX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCOAX.aspx.vb">
+      <DependentUpon>FrmCOAX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDPPD.aspx.designer.vb">
+      <DependentUpon>FrmDPPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDPPD.aspx.vb">
+      <DependentUpon>FrmDPPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryKO.aspx.designer.vb">
+      <DependentUpon>FrmEntryKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryKO.aspx.vb">
+      <DependentUpon>FrmEntryKO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryKontrak.aspx.designer.vb">
+      <DependentUpon>FrmEntryKontrak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryKontrak.aspx.vb">
+      <DependentUpon>FrmEntryKontrak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryPayment.aspx.designer.vb">
+      <DependentUpon>FrmEntryPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryPayment.aspx.vb">
+      <DependentUpon>FrmEntryPayment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryPD.aspx.designer.vb">
+      <DependentUpon>FrmEntryPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryPD.aspx.vb">
+      <DependentUpon>FrmEntryPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryPJ.aspx.designer.vb">
+      <DependentUpon>FrmEntryPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryPJ.aspx.vb">
+      <DependentUpon>FrmEntryPJ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryPO.aspx.designer.vb">
+      <DependentUpon>FrmEntryPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryPO.aspx.vb">
+      <DependentUpon>FrmEntryPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryRAP.aspx.designer.vb">
+      <DependentUpon>FrmEntryRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryRAP.aspx.vb">
+      <DependentUpon>FrmEntryRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntrySetup.aspx.designer.vb">
+      <DependentUpon>FrmEntrySetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntrySetup.aspx.vb">
+      <DependentUpon>FrmEntrySetup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmExportJurnal.aspx.designer.vb">
+      <DependentUpon>FrmExportJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportJurnal.aspx.vb">
+      <DependentUpon>FrmExportJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmJaminan.aspx.designer.vb">
+      <DependentUpon>FrmJaminan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJaminan.aspx.vb">
+      <DependentUpon>FrmJaminan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmJurnal.aspx.designer.vb">
+      <DependentUpon>FrmJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJurnal.aspx.vb">
+      <DependentUpon>FrmJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmJurnalApproval.aspx.designer.vb">
+      <DependentUpon>FrmJurnalApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJurnalApproval.aspx.vb">
+      <DependentUpon>FrmJurnalApproval.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmKategori.aspx.designer.vb">
+      <DependentUpon>FrmKategori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKategori.aspx.vb">
+      <DependentUpon>FrmKategori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmKO.aspx.designer.vb">
+      <DependentUpon>FrmKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKO.aspx.vb">
+      <DependentUpon>FrmKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmKOAddendum.aspx.designer.vb">
+      <DependentUpon>FrmKOAddendum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKOAddendum.aspx.vb">
+      <DependentUpon>FrmKOAddendum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmKontrak.aspx.designer.vb">
+      <DependentUpon>FrmKontrak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKontrak.aspx.vb">
+      <DependentUpon>FrmKontrak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmLK.aspx.designer.vb">
+      <DependentUpon>FrmLK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLK.aspx.vb">
+      <DependentUpon>FrmLK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmLR.aspx.designer.vb">
+      <DependentUpon>FrmLR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLR.aspx.vb">
+      <DependentUpon>FrmLR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmMain.aspx.designer.vb">
+      <DependentUpon>FrmMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.aspx.vb">
+      <DependentUpon>FrmMain.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmNotaAkuntansi.aspx.designer.vb">
+      <DependentUpon>FrmNotaAkuntansi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotaAkuntansi.aspx.vb">
+      <DependentUpon>FrmNotaAkuntansi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmPD.aspx.designer.vb">
+      <DependentUpon>FrmPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPD.aspx.vb">
+      <DependentUpon>FrmPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmPiuProgress.aspx.designer.vb">
+      <DependentUpon>FrmPiuProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPiuProgress.aspx.vb">
+      <DependentUpon>FrmPiuProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmPJ.aspx.designer.vb">
+      <DependentUpon>FrmPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPJ.aspx.vb">
+      <DependentUpon>FrmPJ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmProposal.aspx.designer.vb">
+      <DependentUpon>FrmProposal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProposal.aspx.vb">
+      <DependentUpon>FrmProposal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRAP.aspx.designer.vb">
+      <DependentUpon>FrmRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRAP.aspx.vb">
+      <DependentUpon>FrmRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRealisasiTermin.aspx.designer.vb">
+      <DependentUpon>FrmRealisasiTermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRealisasiTermin.aspx.vb">
+      <DependentUpon>FrmRealisasiTermin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRejectPD.aspx.designer.vb">
+      <DependentUpon>FrmRejectPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRejectPD.aspx.vb">
+      <DependentUpon>FrmRejectPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRek.aspx.designer.vb">
+      <DependentUpon>FrmRek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRek.aspx.vb">
+      <DependentUpon>FrmRek.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRekapKO.aspx.designer.vb">
+      <DependentUpon>FrmRekapKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRekapKO.aspx.vb">
+      <DependentUpon>FrmRekapKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRekapKOProject.aspx.designer.vb">
+      <DependentUpon>FrmRekapKOProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRekapKOProject.aspx.vb">
+      <DependentUpon>FrmRekapKOProject.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRekapPayment.aspx.designer.vb">
+      <DependentUpon>FrmRekapPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRekapPayment.aspx.vb">
+      <DependentUpon>FrmRekapPayment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRekapRAP.aspx.designer.vb">
+      <DependentUpon>FrmRekapRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRekapRAP.aspx.vb">
+      <DependentUpon>FrmRekapRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmResumePK.aspx.designer.vb">
+      <DependentUpon>FrmResumePK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResumePK.aspx.vb">
+      <DependentUpon>FrmResumePK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRPPM.aspx.designer.vb">
+      <DependentUpon>FrmRPPM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRPPM.aspx.vb">
+      <DependentUpon>FrmRPPM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptBB.aspx.designer.vb">
+      <DependentUpon>FrmRptBB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptBB.aspx.vb">
+      <DependentUpon>FrmRptBB.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptBT.aspx.designer.vb">
+      <DependentUpon>FrmRptBT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptBT.aspx.vb">
+      <DependentUpon>FrmRptBT.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptDPPD.aspx.designer.vb">
+      <DependentUpon>FrmRptDPPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptDPPD.aspx.vb">
+      <DependentUpon>FrmRptDPPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptLK.aspx.designer.vb">
+      <DependentUpon>FrmRptLK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptLK.aspx.vb">
+      <DependentUpon>FrmRptLK.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptLR.aspx.designer.vb">
+      <DependentUpon>FrmRptLR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptLR.aspx.vb">
+      <DependentUpon>FrmRptLR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptNA.aspx.designer.vb">
+      <DependentUpon>FrmRptNA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptNA.aspx.vb">
+      <DependentUpon>FrmRptNA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptNeracaMutasi.aspx.designer.vb">
+      <DependentUpon>FrmRptNeracaMutasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptNeracaMutasi.aspx.vb">
+      <DependentUpon>FrmRptNeracaMutasi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptPD.aspx.designer.vb">
+      <DependentUpon>FrmRptPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptPD.aspx.vb">
+      <DependentUpon>FrmRptPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptPenyerapanRAP.aspx.designer.vb">
+      <DependentUpon>FrmRptPenyerapanRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptPenyerapanRAP.aspx.vb">
+      <DependentUpon>FrmRptPenyerapanRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptPJ.aspx.designer.vb">
+      <DependentUpon>FrmRptPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptPJ.aspx.vb">
+      <DependentUpon>FrmRptPJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptPO.aspx.designer.vb">
+      <DependentUpon>FrmRptPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptPO.aspx.vb">
+      <DependentUpon>FrmRptPO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptRAP.aspx.designer.vb">
+      <DependentUpon>FrmRptRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptRAP.aspx.vb">
+      <DependentUpon>FrmRptRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptRekapPayment.aspx.designer.vb">
+      <DependentUpon>FrmRptRekapPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptRekapPayment.aspx.vb">
+      <DependentUpon>FrmRptRekapPayment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptRekapPPD.aspx.designer.vb">
+      <DependentUpon>FrmRptRekapPPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptRekapPPD.aspx.vb">
+      <DependentUpon>FrmRptRekapPPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptRekapRAP.aspx.designer.vb">
+      <DependentUpon>FrmRptRekapRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptRekapRAP.aspx.vb">
+      <DependentUpon>FrmRptRekapRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptSummaryKontrak.aspx.designer.vb">
+      <DependentUpon>FrmRptSummaryKontrak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptSummaryKontrak.aspx.vb">
+      <DependentUpon>FrmRptSummaryKontrak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptTermin.aspx.designer.vb">
+      <DependentUpon>FrmRptTermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptTermin.aspx.vb">
+      <DependentUpon>FrmRptTermin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmSaldo.aspx.designer.vb">
+      <DependentUpon>FrmSaldo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSaldo.aspx.vb">
+      <DependentUpon>FrmSaldo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmSetupAkses.aspx.designer.vb">
+      <DependentUpon>FrmSetupAkses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetupAkses.aspx.vb">
+      <DependentUpon>FrmSetupAkses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmSPR.aspx.designer.vb">
+      <DependentUpon>FrmSPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSPR.aspx.vb">
+      <DependentUpon>FrmSPR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmTermin.aspx.designer.vb">
+      <DependentUpon>FrmTermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTermin.aspx.vb">
+      <DependentUpon>FrmTermin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmTipeForm.aspx.designer.vb">
+      <DependentUpon>FrmTipeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipeForm.aspx.vb">
+      <DependentUpon>FrmTipeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmTrackPD.aspx.designer.vb">
+      <DependentUpon>FrmTrackPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrackPD.aspx.vb">
+      <DependentUpon>FrmTrackPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmVendor.aspx.designer.vb">
+      <DependentUpon>FrmVendor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVendor.aspx.vb">
+      <DependentUpon>FrmVendor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\RptRekapHutang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRekapHutang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptCashFlow.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCashFlow.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptInvReceipt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInvReceipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptBB.vb">
+      <DependentUpon>RptBB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptBT.vb">
+      <DependentUpon>RptBT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptLK.vb">
+      <DependentUpon>RptLK.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptLR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptLR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptNA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptNA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptNeracaMutasi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptNeracaMutasi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptRekapHutang1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRekapHutang1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptRekapKO.vb">
+      <DependentUpon>RptRekapKO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptSRPengeluaran.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSRPengeluaran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptSerapRAP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSerapRAP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptKoProject.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptKoProject.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptPD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptPJ.vb">
+      <DependentUpon>RptPJ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptRAP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRAP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptDPPD.vb">
+      <DependentUpon>RptDPPD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptPO.vb">
+      <DependentUpon>RptPO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptRekapPayment.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRekapPayment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptRekapPPD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptRekapPPD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptRekapRAP.vb">
+      <DependentUpon>RptRekapRAP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptShareTermin.vb">
+      <DependentUpon>RptShareTermin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptSummaryKontrak.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSummaryKontrak.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptTermin.vb">
+      <DependentUpon>RptTermin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptTrackingKO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTrackingKO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmOverrideSaldo.aspx.designer.vb">
+      <DependentUpon>FrmOverrideSaldo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOverrideSaldo.aspx.vb">
+      <DependentUpon>FrmOverrideSaldo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="GenQRCode.aspx.designer.vb">
+      <DependentUpon>GenQRCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenQRCode.aspx.vb">
+      <DependentUpon>GenQRCode.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmPenyerapanRAP.aspx.designer.vb">
+      <DependentUpon>FrmPenyerapanRAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPenyerapanRAP.aspx.vb">
+      <DependentUpon>FrmPenyerapanRAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmSRPengeluaran.aspx.designer.vb">
+      <DependentUpon>FrmSRPengeluaran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSRPengeluaran.aspx.vb">
+      <DependentUpon>FrmSRPengeluaran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptSRPengeluaran.aspx.designer.vb">
+      <DependentUpon>FrmRptSRPengeluaran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptSRPengeluaran.aspx.vb">
+      <DependentUpon>FrmRptSRPengeluaran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmGlReff.aspx.designer.vb">
+      <DependentUpon>FrmGlReff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGlReff.aspx.vb">
+      <DependentUpon>FrmGlReff.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmIdentitas.aspx.designer.vb">
+      <DependentUpon>FrmIdentitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIdentitas.aspx.vb">
+      <DependentUpon>FrmIdentitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntryJurnal.aspx.designer.vb">
+      <DependentUpon>FrmEntryJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntryJurnal.aspx.vb">
+      <DependentUpon>FrmEntryJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmNeracaMutasi.aspx.designer.vb">
+      <DependentUpon>FrmNeracaMutasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNeracaMutasi.aspx.vb">
+      <DependentUpon>FrmNeracaMutasi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmTrackingKO.aspx.designer.vb">
+      <DependentUpon>FrmTrackingKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrackingKO.aspx.vb">
+      <DependentUpon>FrmTrackingKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRptTraceKO.aspx.designer.vb">
+      <DependentUpon>FrmRptTraceKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptTraceKO.aspx.vb">
+      <DependentUpon>FrmRptTraceKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmMessage.aspx.designer.vb">
+      <DependentUpon>FrmMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessage.aspx.vb">
+      <DependentUpon>FrmMessage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmInvoice.aspx.designer.vb">
+      <DependentUpon>FrmInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInvoice.aspx.vb">
+      <DependentUpon>FrmInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmInvoiceReceipt.aspx.designer.vb">
+      <DependentUpon>FrmInvoiceReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInvoiceReceipt.aspx.vb">
+      <DependentUpon>FrmInvoiceReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmItemPrice.aspx.designer.vb">
+      <DependentUpon>FrmItemPrice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmItemPrice.aspx.vb">
+      <DependentUpon>FrmItemPrice.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmPayment.aspx.designer.vb">
+      <DependentUpon>FrmPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPayment.aspx.vb">
+      <DependentUpon>FrmPayment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmCancelPO.aspx.designer.vb">
+      <DependentUpon>FrmCancelPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCancelPO.aspx.vb">
+      <DependentUpon>FrmCancelPO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmNPWP.aspx.designer.vb">
+      <DependentUpon>FrmNPWP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNPWP.aspx.vb">
+      <DependentUpon>FrmNPWP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalTermin.aspx.designer.vb">
+      <DependentUpon>FrmApprovalTermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalTermin.aspx.vb">
+      <DependentUpon>FrmApprovalTermin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmCashFlow.aspx.designer.vb">
+      <DependentUpon>FrmCashFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCashFlow.aspx.vb">
+      <DependentUpon>FrmCashFlow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmQueryAP.aspx.designer.vb">
+      <DependentUpon>FrmQueryAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryAP.aspx.vb">
+      <DependentUpon>FrmQueryAP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmQueryPD.aspx.designer.vb">
+      <DependentUpon>FrmQueryPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryPD.aspx.vb">
+      <DependentUpon>FrmQueryPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmQueryJurnal.aspx.designer.vb">
+      <DependentUpon>FrmQueryJurnal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryJurnal.aspx.vb">
+      <DependentUpon>FrmQueryJurnal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmProgress.aspx.designer.vb">
+      <DependentUpon>FrmProgress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgress.aspx.vb">
+      <DependentUpon>FrmProgress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRAPKO.aspx.designer.vb">
+      <DependentUpon>FrmRAPKO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRAPKO.aspx.vb">
+      <DependentUpon>FrmRAPKO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRekapHutang.aspx.designer.vb">
+      <DependentUpon>FrmRekapHutang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRekapHutang.aspx.vb">
+      <DependentUpon>FrmRekapHutang.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmQueryTermin.aspx.designer.vb">
+      <DependentUpon>FrmQueryTermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryTermin.aspx.vb">
+      <DependentUpon>FrmQueryTermin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmRencanaTermin.aspx.designer.vb">
+      <DependentUpon>FrmRencanaTermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRencanaTermin.aspx.vb">
+      <DependentUpon>FrmRencanaTermin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmViewPDF.aspx.designer.vb">
+      <DependentUpon>FrmViewPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewPDF.aspx.vb">
+      <DependentUpon>FrmViewPDF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmHdrDtl.aspx.designer.vb">
+      <DependentUpon>FrmHdrDtl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHdrDtl.aspx.vb">
+      <DependentUpon>FrmHdrDtl.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Unzip.aspx.designer.vb">
+      <DependentUpon>Unzip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Unzip.aspx.vb">
+      <DependentUpon>Unzip.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebService1.asmx.vb">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRekapHutang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRekapHutang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptCashFlow.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCashFlow.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptInvReceipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInvReceipt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptBB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptBT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptBT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptLK.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLK.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptLR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptNA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptNA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptNeracaMutasi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptNeracaMutasi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRekapHutang1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRekapHutang1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRekapKO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRekapKO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSRPengeluaran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSRPengeluaran.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSerapRAP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSerapRAP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptKoProject.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptKoProject.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptPD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptPJ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPJ.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRekapPPD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRekapPPD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRAP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRAP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptDPPD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDPPD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptPO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRekapPayment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRekapPayment.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptRekapRAP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptRekapRAP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptShareTermin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptShareTermin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSummaryKontrak.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSummaryKontrak.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptTermin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTermin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptTrackingKO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTrackingKO.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet\DsPD1.xsc">
+      <DependentUpon>DsPD1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPD1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPD1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsPD1.xss">
+      <DependentUpon>DsPD1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsGL.xsc">
+      <DependentUpon>DsGL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsGL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsGL.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsGL.xss">
+      <DependentUpon>DsGL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsRpt.xsc">
+      <DependentUpon>DsRpt.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsRpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRpt.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsRpt.xss">
+      <DependentUpon>DsRpt.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsAbsensi.xsc">
+      <DependentUpon>DsAbsensi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsAbsensi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAbsensi.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsAbsensi.xss">
+      <DependentUpon>DsAbsensi.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPPD.xsc">
+      <DependentUpon>DsPPD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPPD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPPD.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsPPD.xss">
+      <DependentUpon>DsPPD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsTermin.xsc">
+      <DependentUpon>DsTermin.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsTermin.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsTermin.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsTermin.xss">
+      <DependentUpon>DsTermin.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsRAP.xsc">
+      <DependentUpon>DsRAP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsRAP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRAP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsRAP.xss">
+      <DependentUpon>DsRAP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPayment.xsc">
+      <DependentUpon>DsPayment.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPayment.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsPayment.xss">
+      <DependentUpon>DsPayment.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsKO.xsc">
+      <DependentUpon>DsKO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsKO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsKO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsKO.xss">
+      <DependentUpon>DsKO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPO.xsc">
+      <DependentUpon>DsPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPO.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsPO.xss">
+      <DependentUpon>DsPO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPD.xsc">
+      <DependentUpon>DsPD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsPD.xsd" />
+    <None Include="DataSet\DsPD.xss">
+      <DependentUpon>DsPD.xsd</DependentUpon>
+    </None>
+    <None Include="js\amcharts\plugins\animate\bower.json" />
+    <None Include="js\amcharts\plugins\animate\LICENSE" />
+    <None Include="js\amcharts\plugins\animate\package.json" />
+    <None Include="js\amcharts\plugins\animate\README.md" />
+    <None Include="js\amcharts\plugins\dataloader\bower.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\gantt.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\gauge.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\map.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\map_areas.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\MSFT.csv" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\MSFT_events.csv" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\pie.csv" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\pie.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\serial.csv" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\serial.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\serial2.json" />
+    <None Include="js\amcharts\plugins\dataloader\examples\data\TXN.csv" />
+    <None Include="js\amcharts\plugins\dataloader\package.json" />
+    <None Include="js\amcharts\plugins\dataloader\readme.md" />
+    <None Include="js\amcharts\plugins\export\.gitignore" />
+    <None Include="js\amcharts\plugins\export\bower.json" />
+    <None Include="js\amcharts\plugins\export\libs\pdfmake\pdfmake.min.js.map" />
+    <None Include="js\amcharts\plugins\export\libs\xlsx\LICENSE" />
+    <None Include="js\amcharts\plugins\export\libs\xlsx\xlsx.min.map" />
+    <None Include="js\amcharts\plugins\export\LICENSE" />
+    <None Include="js\amcharts\plugins\export\package.json" />
+    <None Include="js\amcharts\plugins\export\README.md" />
+    <None Include="js\amcharts\plugins\responsive\bower.json" />
+    <None Include="js\amcharts\plugins\responsive\package.json" />
+    <None Include="js\amcharts\plugins\responsive\readme.md" />
+    <None Include="js\amcharts\plugins\responsive\responsive.min.js.map" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11359</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

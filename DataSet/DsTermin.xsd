@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsTermin" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsTermin" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsTermin" msprop:Generator_UserDSName="DsTermin">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Termin" msprop:Generator_TableClassName="TerminDataTable" msprop:Generator_TableVarName="tableTermin" msprop:Generator_RowChangedName="TerminRowChanged" msprop:Generator_TablePropName="Termin" msprop:Generator_RowDeletingName="TerminRowDeleting" msprop:Generator_RowChangingName="TerminRowChanging" msprop:Generator_RowEvHandlerName="TerminRowChangeEventHandler" msprop:Generator_RowDeletedName="TerminRowDeleted" msprop:Generator_RowClassName="TerminRow" msprop:Generator_UserTableName="Termin" msprop:Generator_RowEvArgName="TerminRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobNo" msprop:Generator_ColumnVarNameInTable="columnJobNo" msprop:Generator_ColumnPropNameInRow="JobNo" msprop:Generator_ColumnPropNameInTable="JobNoColumn" msprop:Generator_UserColumnName="JobNo" type="xs:string" minOccurs="0" />
+              <xs:element name="JobNm" msprop:Generator_ColumnVarNameInTable="columnJobNm" msprop:Generator_ColumnPropNameInRow="JobNm" msprop:Generator_ColumnPropNameInTable="JobNmColumn" msprop:Generator_UserColumnName="JobNm" type="xs:string" minOccurs="0" />
+              <xs:element name="Kategori" msprop:Generator_ColumnVarNameInTable="columnKategori" msprop:Generator_ColumnPropNameInRow="Kategori" msprop:Generator_ColumnPropNameInTable="KategoriColumn" msprop:Generator_UserColumnName="Kategori" type="xs:string" minOccurs="0" />
+              <xs:element name="NettKontrak" msprop:Generator_ColumnVarNameInTable="columnNettKontrak" msprop:Generator_ColumnPropNameInRow="NettKontrak" msprop:Generator_ColumnPropNameInTable="NettKontrakColumn" msprop:Generator_UserColumnName="NettKontrak" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TipeManajerial" msprop:Generator_ColumnVarNameInTable="columnTipeManajerial" msprop:Generator_ColumnPropNameInRow="TipeManajerial" msprop:Generator_ColumnPropNameInTable="TipeManajerialColumn" msprop:Generator_UserColumnName="TipeManajerial" type="xs:string" minOccurs="0" />
+              <xs:element name="PersenShare" msprop:Generator_ColumnVarNameInTable="columnPersenShare" msprop:Generator_ColumnPropNameInRow="PersenShare" msprop:Generator_ColumnPropNameInTable="PersenShareColumn" msprop:Generator_UserColumnName="PersenShare" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NominalShare" msprop:Generator_ColumnVarNameInTable="columnNominalShare" msprop:Generator_ColumnPropNameInRow="NominalShare" msprop:Generator_ColumnPropNameInTable="NominalShareColumn" msprop:Generator_UserColumnName="NominalShare" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIPAInduk" msprop:Generator_ColumnVarNameInTable="columnDIPAInduk" msprop:Generator_ColumnPropNameInRow="DIPAInduk" msprop:Generator_ColumnPropNameInTable="DIPAIndukColumn" msprop:Generator_UserColumnName="DIPAInduk" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIPAMember" msprop:Generator_ColumnVarNameInTable="columnDIPAMember" msprop:Generator_ColumnPropNameInRow="DIPAMember" msprop:Generator_ColumnPropNameInTable="DIPAMemberColumn" msprop:Generator_UserColumnName="DIPAMember" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RealisasiInduk" msprop:Generator_ColumnVarNameInTable="columnRealisasiInduk" msprop:Generator_ColumnPropNameInRow="RealisasiInduk" msprop:Generator_ColumnPropNameInTable="RealisasiIndukColumn" msprop:Generator_UserColumnName="RealisasiInduk" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RealisasiMember" msprop:Generator_ColumnVarNameInTable="columnRealisasiMember" msprop:Generator_ColumnPropNameInRow="RealisasiMember" msprop:Generator_ColumnPropNameInTable="RealisasiMemberColumn" msprop:Generator_UserColumnName="RealisasiMember" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIPAIndukAll" msprop:Generator_ColumnVarNameInTable="columnDIPAIndukAll" msprop:Generator_ColumnPropNameInRow="DIPAIndukAll" msprop:Generator_ColumnPropNameInTable="DIPAIndukAllColumn" msprop:Generator_UserColumnName="DIPAIndukAll" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIPAMemberAll" msprop:Generator_ColumnVarNameInTable="columnDIPAMemberAll" msprop:Generator_ColumnPropNameInRow="DIPAMemberAll" msprop:Generator_ColumnPropNameInTable="DIPAMemberAllColumn" msprop:Generator_UserColumnName="DIPAMemberAll" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RealisasiIndukAll" msprop:Generator_ColumnVarNameInTable="columnRealisasiIndukAll" msprop:Generator_ColumnPropNameInRow="RealisasiIndukAll" msprop:Generator_ColumnPropNameInTable="RealisasiIndukAllColumn" msprop:Generator_UserColumnName="RealisasiIndukAll" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RealisasiMemberAll" msprop:Generator_ColumnVarNameInTable="columnRealisasiMemberAll" msprop:Generator_ColumnPropNameInRow="RealisasiMemberAll" msprop:Generator_ColumnPropNameInTable="RealisasiMemberAllColumn" msprop:Generator_UserColumnName="RealisasiMemberAll" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

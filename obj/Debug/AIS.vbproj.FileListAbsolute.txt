@@ -1,0 +1,332 @@
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\bin\AIS.dll
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\bin\AIS.pdb
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\bin\AIS.xml
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.vbprojResolveAssemblyReference.cache
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.Resources.resources
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.vbproj.GenerateResource.Cache
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.dll.licenses
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.dll
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.xml
+E:\Alkatec_ASP.NET\AIS\Backup\AIS\obj\Debug\AIS.pdb
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\bin\AIS.dll
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\bin\AIS.pdb
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\bin\AIS.xml
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.vbprojResolveAssemblyReference.cache
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.Resources.resources
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.vbproj.GenerateResource.Cache
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.dll.licenses
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.dll
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.xml
+D:\ASP.NET\AIS_ASP.NET\AIS\AIS\obj\Debug\AIS.pdb
+E:\Alkatec_ASP.NET\AIS\AIS\bin\AIS.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\AIS.pdb
+E:\Alkatec_ASP.NET\AIS\AIS\bin\AIS.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Charts.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.CodeParser.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Data.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.DataAccess.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Office.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.PivotGrid.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Printing.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Export.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Sparkline.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Utils.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Web.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Xpo.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraCharts.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraGauges.v17.2.Core.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraPrinting.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraReports.v17.2.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraReports.v17.2.Web.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Data.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.DataAccess.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Office.v17.2.Core.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.PivotGrid.v17.2.Core.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Printing.v17.2.Core.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Core.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Sparkline.v17.2.Core.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Utils.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Web.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.Xpo.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraCharts.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraGauges.v17.2.Core.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraPrinting.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraReports.v17.2.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\DevExpress.XtraReports.v17.2.Web.xml
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Data.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Data.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Data.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Data.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.DataAccess.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.DataAccess.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.DataAccess.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.DataAccess.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Utils.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Utils.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Utils.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Utils.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Web.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Web.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Web.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Web.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.Xpo.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.Xpo.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.Xpo.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.Xpo.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.XtraReports.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.XtraReports.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.XtraReports.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.XtraReports.v17.2.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\de\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\es\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ja\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\bin\ru\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.vbprojResolveAssemblyReference.cache
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.Resources.resources
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.vbproj.GenerateResource.Cache
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.dll.licenses
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.dll
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.xml
+E:\Alkatec_ASP.NET\AIS\AIS\obj\Debug\AIS.pdb
+E:\Source AIS Live Backup\AIS\AIS\bin\AIS.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\AIS.pdb
+E:\Source AIS Live Backup\AIS\AIS\bin\AIS.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Charts.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.CodeParser.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Data.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.DataAccess.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Office.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.PivotGrid.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Printing.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Export.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Sparkline.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Utils.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Web.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Xpo.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraCharts.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraGauges.v17.2.Core.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraPrinting.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraReports.v17.2.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraReports.v17.2.Web.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Data.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.DataAccess.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Office.v17.2.Core.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.PivotGrid.v17.2.Core.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Printing.v17.2.Core.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Core.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Sparkline.v17.2.Core.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Utils.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Web.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.Xpo.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraCharts.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraGauges.v17.2.Core.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraPrinting.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraReports.v17.2.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\DevExpress.XtraReports.v17.2.Web.xml
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Data.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Data.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Data.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Data.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.DataAccess.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.DataAccess.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.DataAccess.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.DataAccess.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.PivotGrid.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Utils.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Utils.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Utils.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Utils.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Web.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Web.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Web.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Web.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.Xpo.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.Xpo.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.Xpo.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.Xpo.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.XtraCharts.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.XtraGauges.v17.2.Core.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.XtraPrinting.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.XtraReports.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.XtraReports.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.XtraReports.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.XtraReports.v17.2.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\de\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\es\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ja\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\bin\ru\DevExpress.XtraReports.v17.2.Web.resources.dll
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.vbprojResolveAssemblyReference.cache
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.Resources.resources
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.vbproj.GenerateResource.Cache
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.dll.licenses
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.dll
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.xml
+E:\Source AIS Live Backup\AIS\AIS\obj\Debug\AIS.pdb
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.vbprojResolveAssemblyReference.cache
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.Resources.resources
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.vbproj.GenerateResource.Cache
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.dll.licenses
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.dll
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.xml
+D:\Pao\Document\AIS\AIS\obj\Debug\AIS.pdb
+D:\Pao\Document\AIS\AIS\bin\AIS.dll
+D:\Pao\Document\AIS\AIS\bin\AIS.pdb
+D:\Pao\Document\AIS\AIS\bin\AIS.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Charts.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.CodeParser.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Data.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.DataAccess.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Office.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.PivotGrid.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Printing.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Export.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Sparkline.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Utils.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Web.ASPxThemes.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Web.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Xpo.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraCharts.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraGauges.v17.2.Core.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraPrinting.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraReports.v17.2.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraReports.v17.2.Web.dll
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Data.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.DataAccess.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Office.v17.2.Core.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.PivotGrid.v17.2.Core.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Printing.v17.2.Core.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.RichEdit.v17.2.Core.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Sparkline.v17.2.Core.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Utils.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Web.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.Xpo.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraCharts.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraGauges.v17.2.Core.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraPrinting.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraReports.v17.2.xml
+D:\Pao\Document\AIS\AIS\bin\DevExpress.XtraReports.v17.2.Web.xml
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Data.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Data.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Data.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Data.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.DataAccess.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.DataAccess.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.DataAccess.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.DataAccess.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Office.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Office.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Office.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Office.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.PivotGrid.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.PivotGrid.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.PivotGrid.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.PivotGrid.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Printing.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Sparkline.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Utils.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Utils.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Utils.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Utils.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Web.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Web.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Web.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Web.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.Xpo.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.Xpo.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.Xpo.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.Xpo.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.XtraCharts.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.XtraCharts.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.XtraCharts.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.XtraCharts.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.XtraGauges.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.XtraGauges.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.XtraGauges.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.XtraGauges.v17.2.Core.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.XtraPrinting.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.XtraPrinting.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.XtraPrinting.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.XtraPrinting.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.XtraReports.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.XtraReports.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.XtraReports.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.XtraReports.v17.2.resources.dll
+D:\Pao\Document\AIS\AIS\bin\de\DevExpress.XtraReports.v17.2.Web.resources.dll
+D:\Pao\Document\AIS\AIS\bin\es\DevExpress.XtraReports.v17.2.Web.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ja\DevExpress.XtraReports.v17.2.Web.resources.dll
+D:\Pao\Document\AIS\AIS\bin\ru\DevExpress.XtraReports.v17.2.Web.resources.dll
