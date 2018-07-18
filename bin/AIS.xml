@@ -6,23 +6,7 @@ AIS
 </name>
 </assembly>
 <members>
-<member name="F:AIS.FrmSPR.MsgBox1">
-	<summary>
-MsgBox1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:AIS.FrmSPR.DialogWindow1">
-	<summary>
-DialogWindow1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:AIS.FrmAlokasi.ErrMsg">
+<member name="F:AIS.FrmAlokasi.ErrMsg">
 	<summary>
 ErrMsg control.
 </summary>
@@ -201,6 +185,254 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:AIS.FrmClosingKO.GridData">
 	<summary>
 GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.PopEntry">
+	<summary>
+PopEntry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtAction">
+	<summary>
+TxtAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtNo">
+	<summary>
+TxtNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.DDLAlokasi">
+	<summary>
+DDLAlokasi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.DDLRap">
+	<summary>
+DDLRap control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtUraian">
+	<summary>
+TxtUraian control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtVol">
+	<summary>
+TxtVol control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtUom">
+	<summary>
+TxtUom control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.BtnSaveMaterial">
+	<summary>
+BtnSaveMaterial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.BtnCancelMaterial">
+	<summary>
+BtnCancelMaterial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblJudul">
+	<summary>
+LblJudul control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblAction">
+	<summary>
+LblAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblJobNo">
+	<summary>
+LblJobNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblNoSPR">
+	<summary>
+LblNoSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblTglSPR">
+	<summary>
+LblTglSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtNoSPR">
+	<summary>
+TxtNoSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TglSPR">
+	<summary>
+TglSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.LblTglSPR1">
+	<summary>
+LblTglSPR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtJobNo">
+	<summary>
+TxtJobNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtKepada">
+	<summary>
+TxtKepada control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TglPenggunaan">
+	<summary>
+TglPenggunaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.TxtUtkPekerjaan">
+	<summary>
+TxtUtkPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.BtnSaveSPR">
+	<summary>
+BtnSaveSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.BtnCancelSPR">
+	<summary>
+BtnCancelSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.BtnAddMaterial">
+	<summary>
+BtnAddMaterial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySPR.GridDataMaterial">
+	<summary>
+GridDataMaterial control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3714,6 +3946,22 @@ CRViewer control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:AIS.FrmRptSPR.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmRptSPR.CRViewer">
+	<summary>
+CRViewer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:AIS.FrmRptTermin.CRViewer">
 	<summary>
 CRViewer control.
@@ -4037,6 +4285,134 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:AIS.FrmApprovalKO.GridView1">
 	<summary>
 GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.ConfirmMsg">
+	<summary>
+ConfirmMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.LblApproval">
+	<summary>
+LblApproval control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.BtnConfirm">
+	<summary>
+BtnConfirm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.TabPage">
+	<summary>
+TabPage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.ContentControl1">
+	<summary>
+ContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.GridBelumApproved">
+	<summary>
+GridBelumApproved control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.ContentControl2">
+	<summary>
+ContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmApprovalSPR.GridApproved">
+	<summary>
+GridApproved control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -5739,6 +6115,22 @@ GridView1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="T:AIS.DsSPR.PRDtlDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AIS.DsSPR.PRDtlRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AIS.DsSPR.PRDtlRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AIS.DsSPR">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
 </member><member name="F:AIS.FrmKOAddendum.ErrMsg">
 	<summary>
 ErrMsg control.
@@ -10147,6 +10539,78 @@ CRViewer control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:AIS.FrmSPR.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.DDLJob">
+	<summary>
+DDLJob control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.BtnAddSPR">
+	<summary>
+BtnAddSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.GridData">
+	<summary>
+GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.MsgBox1">
+	<summary>
+MsgBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmSPR.DialogWindow1">
+	<summary>
+DialogWindow1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:AIS.FrmMessage.TxtMessage">
 	<summary>
 TxtMessage control.
@@ -11363,17 +11827,17 @@ TxtAlamat control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:AIS.FrmEntryPO.TxtKategori">
+</member><member name="F:AIS.FrmEntryPO.DDLSPR">
 	<summary>
-TxtKategori control.
+DDLSPR control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:AIS.FrmEntryPO.TxtUsaha">
+</member><member name="F:AIS.FrmEntryPO.TxtKategori">
 	<summary>
-TxtUsaha control.
+TxtKategori control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -11387,6 +11851,14 @@ TxtTelepon control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:AIS.FrmEntryPO.TxtUsaha">
+	<summary>
+TxtUsaha control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:AIS.FrmEntryPO.TxtNPWP">
 	<summary>
 TxtNPWP control.
@@ -11395,17 +11867,17 @@ TxtNPWP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:AIS.FrmEntryPO.TxtNamaKirim">
+</member><member name="F:AIS.FrmEntryPO.TxtUP">
 	<summary>
-TxtNamaKirim control.
+TxtUP control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:AIS.FrmEntryPO.TxtUP">
+</member><member name="F:AIS.FrmEntryPO.TxtNamaKirim">
 	<summary>
-TxtUP control.
+TxtNamaKirim control.
 </summary>
 	<remarks>
 Auto-generated field.

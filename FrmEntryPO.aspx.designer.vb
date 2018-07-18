@@ -284,6 +284,15 @@ Partial Public Class FrmEntryPO
     Protected WithEvents TxtAlamat As Global.DevExpress.Web.ASPxMemo
 
     '''<summary>
+    '''DDLSPR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DDLSPR As Global.DevExpress.Web.ASPxComboBox
+
+    '''<summary>
     '''TxtKategori control.
     '''</summary>
     '''<remarks>
@@ -291,15 +300,6 @@ Partial Public Class FrmEntryPO
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TxtKategori As Global.DevExpress.Web.ASPxTextBox
-
-    '''<summary>
-    '''TxtUsaha control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TxtUsaha As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
     '''TxtTelepon control.
@@ -311,6 +311,15 @@ Partial Public Class FrmEntryPO
     Protected WithEvents TxtTelepon As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
+    '''TxtUsaha control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtUsaha As Global.DevExpress.Web.ASPxTextBox
+
+    '''<summary>
     '''TxtNPWP control.
     '''</summary>
     '''<remarks>
@@ -320,15 +329,6 @@ Partial Public Class FrmEntryPO
     Protected WithEvents TxtNPWP As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
-    '''TxtNamaKirim control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TxtNamaKirim As Global.DevExpress.Web.ASPxTextBox
-
-    '''<summary>
     '''TxtUP control.
     '''</summary>
     '''<remarks>
@@ -336,6 +336,15 @@ Partial Public Class FrmEntryPO
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TxtUP As Global.DevExpress.Web.ASPxTextBox
+
+    '''<summary>
+    '''TxtNamaKirim control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtNamaKirim As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
     '''TxtAlamatKirim control.

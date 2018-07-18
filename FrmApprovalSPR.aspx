@@ -1,23 +1,22 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="FrmApprovalKO.aspx.vb" Inherits="AIS.FrmApprovalKO" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="FrmApprovalSPR.aspx.vb" Inherits="AIS.FrmApprovalSPR" %>
 <%@ Register assembly="DevExpress.Web.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web" tagprefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <script type="text/javascript">
-$(function () {
-    $("[id*=GridData] td").hover(function () {
-        $("td", $(this).closest("tr")).addClass("hover_row");
-    }, function () {
-        $("td", $(this).closest("tr")).removeClass("hover_row");
+    $(function () {
+        $("[id*=GridBelumApproved] td").hover(function () {
+            $("td", $(this).closest("tr")).addClass("hover_row");
+        }, function () {
+            $("td", $(this).closest("tr")).removeClass("hover_row");
+        });
+        $("[id*=GridApproved] td").hover(function () {
+            $("td", $(this).closest("tr")).addClass("hover_row");
+        }, function () {
+            $("td", $(this).closest("tr")).removeClass("hover_row");
+        });
     });
-    $("[id*=GridView1] td").hover(function () {
-        $("td", $(this).closest("tr")).addClass("hover_row");
-    }, function () {
-        $("td", $(this).closest("tr")).removeClass("hover_row");
-    });
-});
 </script>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div>
     <dx:ASPxPopupControl ID="ErrMsg" runat="server" CloseAction="CloseButton" CloseOnEscape="True" Modal="True"
@@ -71,7 +70,7 @@ $(function () {
 <div style="font-family:Segoe UI Light">
 <table>
 <tr>
-    <td style="font-size:30px; text-decoration:underline">Approval Kontrak/Purchase Order</td>
+    <td style="font-size:30px; text-decoration:underline">Approval Surat Permintaan Material/Alat</td>
 </tr>
 </table>
 </div>
@@ -79,7 +78,7 @@ $(function () {
 <div class="font1">
 <table>
 <tr>
-    <td>Tgl KO</td>
+    <td>Tgl SPR</td>
     <td>:</td>
     <td>
         <dx:ASPxDateEdit ID="PrdAwal" runat="server" CssClass="font1" 
@@ -99,45 +98,6 @@ $(function () {
 </table>
 <table>
 <tr>
-    <td>Filter by</td>
-    <td>:</td>
-    <td>
-        <dx:ASPxComboBox ID="DDLField1" runat="server" 
-            CssClass="font1" Width="200px" 
-            ClientInstanceName="DDLField1" Theme="MetropolisBlue">
-            <Items>
-                <dx:ListEditItem Text="Pilih salah satu" Value="0" Selected="True" />
-                <dx:ListEditItem Text="Job No" Value="A.JobNo" />
-                <dx:ListEditItem Text="No. KO" Value="NoKO" />
-                <dx:ListEditItem Text="Vendor" Value="VendorNm" />
-                <dx:ListEditItem Text="Tipe KO" Value="KategoriId" />
-            </Items>
-        </dx:ASPxComboBox>
-    </td>
-    <td colspan="2">
-        <dx:ASPxComboBox ID="DDLFilterBy1" runat="server" ValueType="System.String" 
-            CssClass="font1" Width="150px" 
-            ClientInstanceName="DDLFilterBy1" Theme="MetropolisBlue">
-            <Items>
-                <dx:ListEditItem Text="Equals" Value="0" Selected="True" />
-                <dx:ListEditItem Text="Contains" Value="1" />
-            </Items>
-        </dx:ASPxComboBox>
-    </td>
-    <td>
-        <dx:ASPxTextBox ID="TxtFind1" runat="server" Width="200px" CssClass="font1">
-        </dx:ASPxTextBox>
-    </td>
-    <td rowspan="2" valign="bottom">
-        <dx:ASPxButton ID="BtnFind" runat="server" Text="FILTER" 
-            Theme="MetropolisBlue">
-        </dx:ASPxButton>   
-    </td>   
-</tr>
-</table>
-
-<table>
-<tr>
 <td>
 <dx:ASPxPageControl ID="TabPage" runat="server" ActiveTabIndex="0" 
         Theme="MetropolisBlue">
@@ -148,7 +108,7 @@ $(function () {
                 <table style="width: 100%">
                 <tr>
                     <td>  
-                        <asp:GridView ID="GridData" runat="server" AutoGenerateColumns="False"               
+                        <asp:GridView ID="GridBelumApproved" runat="server" AutoGenerateColumns="False"               
                             CellPadding="4" ForeColor="#333333" GridLines="Vertical" 
                             ShowHeaderWhenEmpty="True" 
                             PageSize="50" ShowFooter="True" 
@@ -163,32 +123,17 @@ $(function () {
                                 </asp:TemplateField>
                                 <asp:BoundField DataField="JobNo" HeaderText="Job No" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="JobNm" HeaderText="Nama Proyek" HeaderStyle-Width="150px" ItemStyle-Width = "150px">                    
+                                <asp:BoundField DataField="NoSPR" HeaderText="No. SPR" HeaderStyle-Width="100px" ItemStyle-Width = "100px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="NoKO" HeaderText="No. KO" HeaderStyle-Width="100px" ItemStyle-Width = "100px">                    
-                                </asp:BoundField>
-                                <asp:BoundField DataField="TglKO" HeaderText="Tgl KO" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
+                                <asp:BoundField DataField="TglSPR" HeaderText="Tgl SPR" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
                                     DataFormatString="{0:dd-MMM-yyyy}">                        
                                 <ItemStyle HorizontalAlign="Center" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="VendorNm" HeaderText="Vendor" HeaderStyle-Width="250px" ItemStyle-Width = "250px">                    
+                                <asp:BoundField DataField="Kepada" HeaderText="Kepada" HeaderStyle-Width="150px" ItemStyle-Width = "150px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="KategoriId" HeaderText="Tipe KO" HeaderStyle-Width="100px" ItemStyle-Width = "100px" 
-                                ItemStyle-HorizontalAlign="Center">                    
+                                <asp:BoundField DataField="UtkPekerjaan" HeaderText="Untuk Pekerjaan" HeaderStyle-Width="250px" ItemStyle-Width = "250px">                    
                                 </asp:BoundField>
-                                <asp:TemplateField HeaderText="Total KO (Rp)" HeaderStyle-Width="250px" ItemStyle-Width = "250px">
-                                    <ItemTemplate>
-                                        <asp:Label ID="LblTotal" Text='<%# string.Format("{0:N0}",(Eval("SubTotal") - Eval("DiscAmount")) + Eval("PPN")) %>' runat="server"/>                                
-                                    </ItemTemplate>
-                                    <ItemStyle HorizontalAlign="Right"></ItemStyle>                            
-                                </asp:TemplateField>
-                                <asp:BoundField DataField="ApprovedBy" HeaderText="KO Approved By" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                    
-                                </asp:BoundField>
-                                <asp:BoundField DataField="TimeApproved" HeaderText="KO Approved On" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
-                                    DataFormatString="{0:dd-MMM-yyyy}">                        
-                                <ItemStyle HorizontalAlign="Center" />
-                                </asp:BoundField>
-                                <asp:ButtonField CommandName="BtnUpdate" Text="SELECT"  HeaderStyle-Width="45px" />                                          
+                                <asp:ButtonField CommandName="BtnSelectBlmApprove" Text="SELECT"  HeaderStyle-Width="45px" />                                          
                                 <asp:ButtonField CommandName="BtnApprove" Text="APPROVE" HeaderStyle-Width="45px" />   
                             </Columns>
                             <EditRowStyle BackColor="#999999" />
@@ -214,7 +159,7 @@ $(function () {
                 <table style="width: 100%">
                 <tr>
                     <td>  
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"               
+                        <asp:GridView ID="GridApproved" runat="server" AutoGenerateColumns="False"               
                             CellPadding="4" ForeColor="#333333" GridLines="Vertical" 
                             ShowHeaderWhenEmpty="True" 
                             PageSize="50" ShowFooter="True" 
@@ -229,32 +174,23 @@ $(function () {
                                 </asp:TemplateField>
                                 <asp:BoundField DataField="JobNo" HeaderText="Job No" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="JobNm" HeaderText="Nama Proyek" HeaderStyle-Width="150px" ItemStyle-Width = "150px">                    
+                                <asp:BoundField DataField="NoSPR" HeaderText="No. SPR" HeaderStyle-Width="100px" ItemStyle-Width = "100px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="NoKO" HeaderText="No. KO" HeaderStyle-Width="100px" ItemStyle-Width = "100px">                    
-                                </asp:BoundField>
-                                <asp:BoundField DataField="TglKO" HeaderText="Tgl KO" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
+                                <asp:BoundField DataField="TglSPR" HeaderText="Tgl SPR" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
                                     DataFormatString="{0:dd-MMM-yyyy}">                        
                                 <ItemStyle HorizontalAlign="Center" />
                                 </asp:BoundField>
-                                <asp:BoundField DataField="VendorNm" HeaderText="Vendor" HeaderStyle-Width="250px" ItemStyle-Width = "250px">                    
+                                <asp:BoundField DataField="Kepada" HeaderText="Kepada" HeaderStyle-Width="150px" ItemStyle-Width = "150px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="KategoriId" HeaderText="Tipe KO" HeaderStyle-Width="100px" ItemStyle-Width = "100px" 
-                                ItemStyle-HorizontalAlign="Center">                    
+                                <asp:BoundField DataField="UtkPekerjaan" HeaderText="Untuk Pekerjaan" HeaderStyle-Width="250px" ItemStyle-Width = "250px">                    
                                 </asp:BoundField>
-                                <asp:TemplateField HeaderText="Total KO (Rp)" HeaderStyle-Width="250px" ItemStyle-Width = "250px">
-                                    <ItemTemplate>
-                                        <asp:Label ID="LblTotal" Text='<%# string.Format("{0:N0}",(Eval("SubTotal") - Eval("DiscAmount")) + Eval("PPN")) %>' runat="server"/>                                
-                                    </ItemTemplate>
-                                    <ItemStyle HorizontalAlign="Right"></ItemStyle>                            
-                                </asp:TemplateField>
-                                <asp:BoundField DataField="ApprovedBy" HeaderText="KO Approved By" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                    
+                                <asp:BoundField DataField="ApprovedBy" HeaderText="SPR Approved By" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                    
                                 </asp:BoundField>
-                                <asp:BoundField DataField="TimeApproved" HeaderText="KO Approved On" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
+                                <asp:BoundField DataField="TimeApproved" HeaderText="SPR Approved On" HeaderStyle-Width="100px" ItemStyle-Width = "100px"
                                     DataFormatString="{0:dd-MMM-yyyy}">                        
                                 <ItemStyle HorizontalAlign="Center" />
                                 </asp:BoundField>
-                                <asp:ButtonField CommandName="BtnUpdate" Text="SELECT"  HeaderStyle-Width="45px" />         
+                                <asp:ButtonField CommandName="BtnSelectApprove" Text="SELECT"  HeaderStyle-Width="45px" />         
                                 <asp:ButtonField CommandName="BtnUnApprove" Text="UNAPPROVE" HeaderStyle-Width="45px" />                                    
                             </Columns>
                             <EditRowStyle BackColor="#999999" />
@@ -279,7 +215,5 @@ $(function () {
 </td>
 </tr>
 </table>
-
 </div>
-
 </asp:Content>

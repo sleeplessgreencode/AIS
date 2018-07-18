@@ -24,6 +24,7 @@
         LblMix.Text = Session("KO").ToString.Split("|")(4)
 
         If IsPostBack = False Then
+            Call BindDDLSPR()
             Call BindVendor()
             'Call BindKategori()
             'Call BindSubKategori()
@@ -140,7 +141,24 @@
         CmdBind.Dispose()
 
     End Sub
+    Private Sub BindDDLSPR()
+        DDLSPR.Items.Clear()
+        DDLSPR.Items.Add("Pilih salah satu", "0")
 
+        Using CmdFind As New Data.SqlClient.SqlCommand
+            With CmdFind
+                .Connection = Conn
+                .CommandType = CommandType.Text
+                .CommandText = "SELECT NoSPR, UtkPekerjaan FROM PRHdr WHERE JobNo=@P1 AND ApprovedBy IS NOT NULL"
+                .Parameters.AddWithValue("@P1", Trim(LblJobNo.Text.Split("-")(0)))
+            End With
+            Using RsFind As Data.SqlClient.SqlDataReader = CmdFind.ExecuteReader
+                While RsFind.Read
+                    DDLSPR.Items.Add(RsFind("NoSPR") & " - " & RsFind("UtkPekerjaan"), RsFind("NoSPR"))
+                End While
+            End Using
+        End Using
+    End Sub
     Private Sub BindGrid()
         Dim Ttl As Decimal = 0
         TglKO.Date = Format(Now, "dd-MMM-yyyy")
@@ -161,6 +179,12 @@
         GridData.Columns(6).FooterStyle.HorizontalAlign = HorizontalAlign.Right
 
         If LblAction.Text <> "NEW" Then
+            If DDLSPR.Value <> "0" Then
+                BtnAdd.Visible = False
+            Else
+                BtnAdd.Visible = True
+            End If
+
             Dim CmdFind As New Data.SqlClient.SqlCommand
             With CmdFind
                 .Connection = Conn
@@ -182,6 +206,7 @@
                 LblTglKO1.Text = RsFind("TglKO")
                 DDLVendor.Value = RsFind("VendorId")
                 DDLVendor_SelectedIndexChanged(DDLVendor, New EventArgs())
+                DDLSPR.Value = RsFind("NoSPR")
                 'DDLKategori.Value = RsFind("KategoriId")
                 'Call BindSubKategori()
                 'DDLSubKategori.Value = RsFind("SubKategoriId")
@@ -281,6 +306,51 @@
             ErrMsg.ShowOnPageLoad = True
             Exit Sub
         End If
+        ' Jika NoSPR diisi, cek setiap item di GridData, ditambah dengan item & nospr yang sama yang 
+        ' ada di tabel KoHdr dan cek ke KoDtl jumlahnya. Total item yang ada ditambah dengan Total di KoDtl
+        ' tidak boleh melebihi item di SPR atau pop up error
+        If DDLSPR.Value <> "0" Then
+            For Each row As GridViewRow In GridData.Rows
+                Dim UraianSPR As String = TryCast(row.FindControl("LblUraian"), Label).Text
+                Dim VolSPRinKO As Decimal = Convert.ToDecimal(row.Cells(3).Text)
+                Dim CmdFindVol As New Data.SqlClient.SqlCommand
+                With CmdFindVol
+                    .Connection = Conn
+                    .CommandType = CommandType.Text
+                    .CommandText = "SELECT SUM(Vol) Volume FROM KoHdr a LEFT JOIN KoDtl b " & _
+                                   "ON a.NoKO = b.NoKO WHERE a.NoSPR=@P1 AND b.Uraian=@P2 AND a.NoKO NOT LIKE @P3"
+                    .Parameters.AddWithValue("@P1", DDLSPR.Value)
+                    .Parameters.AddWithValue("@P2", UraianSPR)
+                    .Parameters.AddWithValue("@P3", "%" & TxtNoKO.Text & "%")
+                End With
+                Using RsFindVol As Data.SqlClient.SqlDataReader = CmdFindVol.ExecuteReader
+                    If RsFindVol.Read Then
+                        VolSPRinKO = VolSPRinKO + If(RsFindVol("Volume") Is DBNull.Value, 0, RsFindVol("Volume"))
+                    End If
+                End Using
+                LblErr.Text = VolSPRinKO
+                ErrMsg.ShowOnPageLoad = True
+                Dim VolSPR As Decimal
+                Dim CmdFindVolSPR As New Data.SqlClient.SqlCommand
+                With CmdFindVolSPR
+                    .Connection = Conn
+                    .CommandType = CommandType.Text
+                    .CommandText = "SELECT Vol FROM PRDtl WHERE NoSPR=@P1 AND Uraian=@P2"
+                    .Parameters.AddWithValue("@P1", DDLSPR.Value)
+                    .Parameters.AddWithValue("@P2", UraianSPR)
+                End With
+                Using RsFindVolSPR As Data.SqlClient.SqlDataReader = CmdFindVolSPR.ExecuteReader
+                    If RsFindVolSPR.Read Then
+                        VolSPR = If(RsFindVolSPR("Vol") Is DBNull.Value, 0, RsFindVolSPR("Vol"))
+                    End If
+                End Using
+                If VolSPRinKO > VolSPR Then
+                    LblErr.Text = "Jumlah volume untuk item " & UraianSPR & " sudah melebihi volume yang terdapat dalam SPR."
+                    ErrMsg.ShowOnPageLoad = True
+                    Exit Sub
+                End If
+            Next
+        End If
         'If DDLKategori.Value = "0" Then
         '    LblErr.Text = "Kategori belum dipilih."
         '    ErrMsg.ShowOnPageLoad = True
@@ -348,8 +418,8 @@
                 .CommandType = CommandType.Text
                 .CommandText = "INSERT INTO KoHdr (NoKO,TglKO,JobNo,VendorId,SubTotal,DiscPercentage,DiscAmount,PPN,AlamatKirim,NamaKirim,TeleponKirim," & _
                                "MaterialApproval,RAP,K3,SyaratTeknis,JadwalPengiriman,JadwalPembayaran,SyaratPembayaran,Sanksi,Keterangan,UserEntry," & _
-                               "TimeEntry,KategoriId,QRCode,OverridePPN) VALUES " & _
-                               "(@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9,@P10,@P11,@P12,@P13,@P14,@P15,@P16,@P17,@P18,@P19,@P20,@P21,@P22,@P23,@P24,@P25)"
+                               "TimeEntry,KategoriId,QRCode,OverridePPN, NoSPR) VALUES " & _
+                               "(@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9,@P10,@P11,@P12,@P13,@P14,@P15,@P16,@P17,@P18,@P19,@P20,@P21,@P22,@P23,@P24,@P25, @P26)"
                 .Parameters.AddWithValue("@P1", TxtNoKO.Text)
                 .Parameters.AddWithValue("@P2", TglKO.Date)
                 .Parameters.AddWithValue("@P3", Trim(LblJobNo.Text.Split("-")(0)))
@@ -375,6 +445,7 @@
                 .Parameters.AddWithValue("@P23", "PO")
                 .Parameters.AddWithValue("@P24", GetQRCode)
                 .Parameters.AddWithValue("@P25", If(CbOverride.Checked = True, "1", "0"))
+                .Parameters.AddWithValue("@P26", DDLSPR.Value)
                 .ExecuteNonQuery()
                 .Dispose()
             End With
@@ -387,7 +458,7 @@
                 .CommandText = "UPDATE KoHdr SET SubTotal=@P1,DiscPercentage=@P2,DiscAmount=@P3,PPN=@P4,AlamatKirim=@P5,NamaKirim=@P6," & _
                                "TeleponKirim=@P7,MaterialApproval=@P8,RAP=@P9,K3=@P10,SyaratTeknis=@P11,JadwalPengiriman=@P12," & _
                                "JadwalPembayaran=@P13,SyaratPembayaran=@P14,Sanksi=@P15,Keterangan=@P16,UserEntry=@P17,TimeEntry=@P18," & _
-                               "TglKO=@P19,VendorId=@P20,OverridePPN=@P21 WHERE NoKO=@P22"
+                               "TglKO=@P19,VendorId=@P20,OverridePPN=@P21,NoSPR=@P23 WHERE NoKO=@P22"
                 .Parameters.AddWithValue("@P1", GridData.Columns(6).FooterText)
                 .Parameters.AddWithValue("@P2", TxtDiscPersen.Text)
                 .Parameters.AddWithValue("@P3", TxtDiscNominal.Text)
@@ -410,6 +481,7 @@
                 .Parameters.AddWithValue("@P20", DDLVendor.Value)
                 .Parameters.AddWithValue("@P21", If(CbOverride.Checked = True, "1", "0"))
                 .Parameters.AddWithValue("@P22", TxtNoKO.Text)
+                .Parameters.AddWithValue("@P23", DDLSPR.Value)
                 .ExecuteNonQuery()
                 .Dispose()
             End With
@@ -497,6 +569,12 @@
             TxtVol.Text = SelectRecord.Cells(3).Text
             TxtUom.Text = SelectRecord.Cells(4).Text
             TxtHrgSatuan.Text = SelectRecord.Cells(5).Text
+            'If DDLSPR.Value <> "" Then
+            '    DDLAlokasi.Enabled = False
+            '    DDLRap.Enabled = False
+            '    TxtUraian.Enabled = False
+            '    TxtUom.Enabled = False
+            'End If
             PopEntry.ShowOnPageLoad = True
 
         ElseIf e.CommandName = "BtnDelete" Then
@@ -709,7 +787,38 @@
         BtnCancel.Enabled = True
 
     End Sub
+    Protected Sub DDLSPR_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDLSPR.SelectedIndexChanged
+        TmpDt = Session("TmpDt")
+        TmpDt.Rows.Clear()
 
+        If DDLSPR.Value <> "0" Then
+            Dim CmdFind As New Data.SqlClient.SqlCommand
+            With CmdFind
+                .Connection = Conn
+                .CommandType = CommandType.Text
+                .CommandText = "SELECT * FROM PRDtl WHERE NoSPR=@P1"
+                .Parameters.AddWithValue("@P1", DDLSPR.Value)
+            End With
+            Using RsFind As Data.SqlClient.SqlDataReader = CmdFind.ExecuteReader
+                While RsFind.Read
+                    TmpDt.Rows.Add(RsFind("NoUrut"), RsFind("Alokasi"), RsFind("KdRap"), RsFind("Uraian"), RsFind("Vol"), RsFind("Uom"), 0)
+                End While
+            End Using
+            BtnAdd.Visible = False
+        Else
+            BtnAdd.Visible = True
+        End If
+
+        Session("TmpDt") = TmpDt
+        GridData.DataSource = TmpDt
+        GridData.DataBind()
+
+        If DDLSPR.Value <> "0" Then
+            BtnAdd.Visible = False
+        Else
+            BtnAdd.Visible = True
+        End If
+    End Sub
     Protected Sub DDLVendor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DDLVendor.SelectedIndexChanged
         TxtNama.Text = ""
         TxtAlamat.Text = ""

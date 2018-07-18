@@ -222,7 +222,7 @@ $(function () {
     <td>
         <dx:ASPxTextBox ID="TxtJob" runat="server" Width="200px" Enabled="False" CssClass="font1">
         </dx:ASPxTextBox>        
-    </td>
+    </td> 
 </tr>
 <tr>
     <td rowspan="2" valign="top">Alamat</td>
@@ -232,6 +232,18 @@ $(function () {
             CssClass="font1">
         </dx:ASPxMemo>
     </td>
+    <td></td>
+    <td>No SPR</td>
+    <td>:</td>
+    <td>
+        <dx:ASPxComboBox ID="DDLSPR" runat="server" ValueType="System.String" 
+            CssClass="font1" Width="100%" 
+            ClientInstanceName="DDLSPR" Theme="MetropolisBlue" 
+            AutoPostBack="True">      
+        </dx:ASPxComboBox>       
+    </td> 
+</tr>
+<tr>
     <td></td>
     <td>Kategori</td>
     <td>:</td>
@@ -245,7 +257,13 @@ $(function () {
         </dx:ASPxComboBox>--%>
     </td>    
 </tr>
-<tr>
+<tr>   
+    <td>Telepon</td>
+    <td>:</td>
+    <td>
+        <dx:ASPxTextBox ID="TxtTelepon" runat="server" Width="100%" CssClass="font1" Enabled="false">            
+        </dx:ASPxTextBox>        
+    </td>
     <td></td>
     <td>Bidang Usaha</td>
     <td>:</td>
@@ -256,23 +274,22 @@ $(function () {
             CssClass="font1" Width="250px" 
             ClientInstanceName="DDLSubKategori" TabIndex="3" Theme="MetropolisBlue">
         </dx:ASPxComboBox>--%>
-    </td>    
-</tr>
-<tr>   
-    <td>Telepon</td>
-    <td>:</td>
-    <td>
-        <dx:ASPxTextBox ID="TxtTelepon" runat="server" Width="100%" CssClass="font1" Enabled="false">            
-        </dx:ASPxTextBox>        
-    </td>
-    <td></td>
-    <td colspan="3" align="center" bgcolor="silver" style="font-weight:bold">Lokasi Pengiriman</td>        
+    </td>       
 </tr>
 <tr>
     <td>NPWP</td>
     <td>:</td>
     <td>
         <dx:ASPxTextBox ID="TxtNPWP" runat="server" Width="100%" CssClass="font1" Enabled="false"></dx:ASPxTextBox>        
+    </td>
+    <td></td>
+    <td colspan="3" align="center" bgcolor="silver" style="font-weight:bold">Lokasi Pengiriman</td> 
+</tr>
+<tr>
+    <td>UP</td>
+    <td>:</td>
+    <td>
+        <dx:ASPxTextBox ID="TxtUP" runat="server" Width="100%" CssClass="font1" Enabled="false"></dx:ASPxTextBox>  
     </td>
     <td></td>
     <td>Nama</td>
@@ -283,12 +300,10 @@ $(function () {
     </td>
 </tr>
 <tr>
-    <td>UP</td>
-    <td>:</td>
-    <td>
-        <dx:ASPxTextBox ID="TxtUP" runat="server" Width="100%" CssClass="font1" Enabled="false"></dx:ASPxTextBox>  
-    </td>
-    <td></td>
+    <td colspan="4"></td>
+</tr>
+<tr>    
+    <td colspan="4"></td>
     <td rowspan="2" valign="top">Alamat</td>
     <td rowspan="2" valign="top">:</td>
     <td rowspan="2" valign="top">
@@ -298,9 +313,8 @@ $(function () {
     </td>
 </tr>
 <tr>
-    <td colspan="4"></td>
 </tr>
-<tr>    
+<tr>
     <td colspan="4"></td>
     <td>Telepon</td>
     <td>:</td>
@@ -330,122 +344,123 @@ $(function () {
 </table>
 
 <table>
-<tr>
-    <td align="center" bgcolor="silver" style="height:20px; font-weight:bold;">O  R  D  E  R&nbsp; &nbsp;L  I  S  T</td>
-</tr>
-<tr>
-    <td style="border: 2px solid #C0C0C0">
+    <tr>
+        <td align="center" bgcolor="silver" style="height:20px; font-weight:bold;">O  R  D  E  R&nbsp; &nbsp;L  I  S  T</td>
+    </tr>
+    <tr>
+        <td style="border: 2px solid #C0C0C0">
+            <table>
+                <tr>
+                    <td style="padding-bottom:5px">
+                        <dx:ASPxButton ID="BtnAdd" runat="server" Text="TAMBAH"
+                            Theme="MetropolisBlue" Width="80px" AutoPostBack="False" 
+                            CausesValidation="False">
+                        </dx:ASPxButton>                       
+                    </td>           
+                </tr>
+                <tr>
+                    <td>
+                        <asp:GridView ID="GridData" runat="server" AutoGenerateColumns="False"               
+                            CellPadding="4" ForeColor="#333333" GridLines="Vertical" 
+                            PageSize="20" ShowFooter="True" 
+                            ShowHeaderWhenEmpty="True">
+                            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                            <Columns>              
+                                <asp:BoundField DataField="NoUrut" HeaderText="No."  HeaderStyle-Width="35px" ItemStyle-Width = "35px" ItemStyle-HorizontalAlign="Center">     
+                                </asp:BoundField>
+                                <asp:BoundField DataField="KdRAP" HeaderText="Kode RAP" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                        
+                                </asp:BoundField>
+                                <asp:TemplateField HeaderText="Uraian" HeaderStyle-Width="550px" ItemStyle-Width = "550px">
+                                    <ItemTemplate>
+                                        <asp:Label ID="LblUraian" runat="server" Text='<%# Eval("Uraian").ToString().Replace(vbCRLF, "<br />") %>'></asp:Label>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:BoundField DataField="Vol" HeaderText="Vol"  HeaderStyle-Width="80px" ItemStyle-Width = "80px" 
+                                ItemStyle-HorizontalAlign="Right" DataFormatString="{0:N3}">
+                                </asp:BoundField>
+                                <asp:BoundField DataField="Uom" HeaderText="Sat" HeaderStyle-Width= "30px" ItemStyle-Width = "30px" ItemStyle-HorizontalAlign="Center">                        
+                                </asp:BoundField>
+                                <asp:BoundField DataField="HrgSatuan" HeaderText="Harga Satuan (Rp)" 
+                                    HeaderStyle-Width="200px" ItemStyle-Width = "200px" DataFormatString="{0:N0}" Itemstyle-HorizontalAlign="right">
+                                </asp:BoundField>                        
+                                <asp:TemplateField HeaderText="Jumlah Harga (Rp)" HeaderStyle-Width="250px" ItemStyle-Width = "250px">
+                                    <ItemTemplate>
+                                        <asp:Label ID="LblJumlah" Text='<%# string.Format("{0:N0}",Eval("Vol") * Eval("HrgSatuan")) %>' runat="server"/>                                
+                                    </ItemTemplate>
+                                    <ItemStyle HorizontalAlign="Right"></ItemStyle>                            
+                                </asp:TemplateField>
+                                <asp:BoundField DataField="Alokasi" HeaderText="Alokasi" 
+                                    HeaderStyle-Width="30px" ItemStyle-Width = "30px">
+                                    <HeaderStyle CssClass="hiddencol" />
+                                    <ItemStyle CssClass="hiddencol" />
+                                </asp:BoundField>  
+                                <asp:ButtonField CommandName="BtnUpdate" Text="SELECT" HeaderStyle-Width="45px"/>                                          
+                                <asp:ButtonField CommandName="BtnDelete" Text="DELETE" HeaderStyle-Width="45px"/>                                                                 
+                            </Columns>
+                            <EditRowStyle BackColor="#999999" />
+                            <FooterStyle BackColor="#5D7B9D" Font-Bold="False" ForeColor="White" />
+                            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                            <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                            <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                            <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                            <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                        </asp:GridView> 
+                    </td>
+                </tr>                 
+            </table>
+        </td>
+    </tr>
+</table>
         <table>
-        <tr>
-            <td style="padding-bottom:5px">
-                <dx:ASPxButton ID="BtnAdd" runat="server" Text="TAMBAH"
-                    Theme="MetropolisBlue" Width="80px" AutoPostBack="False" 
-                    CausesValidation="False">
-                </dx:ASPxButton>                       
-            </td>           
-        </tr>
-        <tr>
-            <td>
-                <asp:GridView ID="GridData" runat="server" AutoGenerateColumns="False"               
-                    CellPadding="4" ForeColor="#333333" GridLines="Vertical" 
-                    PageSize="20" ShowFooter="True" 
-                    ShowHeaderWhenEmpty="True">
-                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-                    <Columns>              
-                        <asp:BoundField DataField="NoUrut" HeaderText="No."  HeaderStyle-Width="35px" ItemStyle-Width = "35px" ItemStyle-HorizontalAlign="Center">     
-                        </asp:BoundField>
-                        <asp:BoundField DataField="KdRAP" HeaderText="Kode RAP" HeaderStyle-Width="80px" ItemStyle-Width = "80px">                        
-                        </asp:BoundField>
-                        <asp:TemplateField HeaderText="Uraian" HeaderStyle-Width="550px" ItemStyle-Width = "550px">
-                            <ItemTemplate>
-                                <asp:Label ID="LblUraian" runat="server" Text='<%# Eval("Uraian").ToString().Replace(vbCRLF, "<br />") %>'></asp:Label>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:BoundField DataField="Vol" HeaderText="Vol"  HeaderStyle-Width="80px" ItemStyle-Width = "80px" 
-                        ItemStyle-HorizontalAlign="Right" DataFormatString="{0:N3}">
-                        </asp:BoundField>
-                        <asp:BoundField DataField="Uom" HeaderText="Sat" HeaderStyle-Width= "30px" ItemStyle-Width = "30px" ItemStyle-HorizontalAlign="Center">                        
-                        </asp:BoundField>
-                        <asp:BoundField DataField="HrgSatuan" HeaderText="Harga Satuan (Rp)" 
-                            HeaderStyle-Width="200px" ItemStyle-Width = "200px" DataFormatString="{0:N0}" Itemstyle-HorizontalAlign="right">
-                        </asp:BoundField>                        
-                        <asp:TemplateField HeaderText="Jumlah Harga (Rp)" HeaderStyle-Width="250px" ItemStyle-Width = "250px">
-                            <ItemTemplate>
-                                <asp:Label ID="LblJumlah" Text='<%# string.Format("{0:N0}",Eval("Vol") * Eval("HrgSatuan")) %>' runat="server"/>                                
-                            </ItemTemplate>
-                            <ItemStyle HorizontalAlign="Right"></ItemStyle>                            
-                        </asp:TemplateField>
-                        <asp:BoundField DataField="Alokasi" HeaderText="Alokasi" 
-                            HeaderStyle-Width="30px" ItemStyle-Width = "30px">
-                            <HeaderStyle CssClass="hiddencol" />
-                            <ItemStyle CssClass="hiddencol" />
-                        </asp:BoundField>  
-                        <asp:ButtonField CommandName="BtnUpdate" Text="SELECT" HeaderStyle-Width="45px"/>                                          
-                        <asp:ButtonField CommandName="BtnDelete" Text="DELETE" HeaderStyle-Width="45px"/>                                                                 
-                    </Columns>
-                    <EditRowStyle BackColor="#999999" />
-                    <FooterStyle BackColor="#5D7B9D" Font-Bold="False" ForeColor="White" />
-                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                    <SortedAscendingCellStyle BackColor="#E9E7E2" />
-                    <SortedAscendingHeaderStyle BackColor="#506C8C" />
-                    <SortedDescendingCellStyle BackColor="#FFFDF8" />
-                    <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
-                </asp:GridView> 
-            </td>
-        </tr>                 
+            <tr>
+                <td style="width:25px"></td>
+                <td style="width:60px"></td>
+                <td style="width:630px; text-align:right; font-family:Tahoma; font-size:12px; font-weight:bold">Disc (%)</td>
+                <td></td>
+                <td style="width:30px"></td>
+                <td>
+                    <dx:ASPxSpinEdit ID="TxtDiscPersen" runat="server" DecimalPlaces="2" 
+                        DisplayFormatString="{0:N2}" Number="0" MaxLength="6" Width="200px" 
+                        CssClass="font1" HorizontalAlign="Right" AutoPostBack="True" NullText="0" MaxValue="100">
+                    <SpinButtons ShowIncrementButtons="False"/>
+                    </dx:ASPxSpinEdit>   
+                </td>
+                <td>
+                    <dx:ASPxSpinEdit ID="TxtDiscNominal" runat="server" DecimalPlaces="0" 
+                        DisplayFormatString="{0:N0}" Number="0" Width="230px" 
+                        CssClass="font1" HorizontalAlign="Right" AutoPostBack="true" NullText="0">
+                    <SpinButtons ShowIncrementButtons="False"/>
+                    </dx:ASPxSpinEdit>   
+                </td>
+            </tr>          
+            <tr>
+                <td colspan="5"></td>
+                <td style="width:200px; text-align:center; font-family:Tahoma; font-size:12px; font-weight:bold">PPN</td>
+                <td>
+                    <dx:ASPxSpinEdit ID="TxtPPN" runat="server" DecimalPlaces="0" 
+                        DisplayFormatString="{0:N0}" Number="0" Width="230px" 
+                        CssClass="font1" HorizontalAlign="Right" AutoPostBack="true" NullText="0">
+                    <SpinButtons ShowIncrementButtons="False"/>
+                    </dx:ASPxSpinEdit>   
+                </td>
+                <td>
+                    <dx:ASPxCheckBox ID="CbOverride" runat="server" Text="Override PPN" Width="100px" Enabled="false" AutoPostBack="true">
+                    </dx:ASPxCheckBox>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td style="width:200px; text-align:center; font-family:Tahoma; font-size:12px; font-weight:bold">Grand Total</td>
+                <td>
+                    <dx:ASPxTextBox ID="TxtTotal" runat="server" Width="230px" CssClass="font1" 
+                        Enabled="false" HorizontalAlign="Right" Text="0"></dx:ASPxTextBox>  
+                </td>
+            </tr>  
         </table>
-        <table>
-        <tr>
-            <td style="width:25px"></td>
-            <td style="width:60px"></td>
-            <td style="width:630px; text-align:right; font-family:Tahoma; font-size:12px; font-weight:bold">Disc (%)</td>
-            <td></td>
-            <td style="width:30px"></td>
-            <td>
-                <dx:ASPxSpinEdit ID="TxtDiscPersen" runat="server" DecimalPlaces="2" 
-                    DisplayFormatString="{0:N2}" Number="0" MaxLength="6" Width="200px" 
-                    CssClass="font1" HorizontalAlign="Right" AutoPostBack="True" NullText="0" MaxValue="100">
-                <SpinButtons ShowIncrementButtons="False"/>
-                </dx:ASPxSpinEdit>   
-            </td>
-            <td>
-                <dx:ASPxSpinEdit ID="TxtDiscNominal" runat="server" DecimalPlaces="0" 
-                    DisplayFormatString="{0:N0}" Number="0" Width="230px" 
-                    CssClass="font1" HorizontalAlign="Right" AutoPostBack="true" NullText="0">
-                <SpinButtons ShowIncrementButtons="False"/>
-                </dx:ASPxSpinEdit>   
-            </td>
-        </tr>          
-        <tr>
-            <td colspan="5"></td>
-            <td style="width:200px; text-align:center; font-family:Tahoma; font-size:12px; font-weight:bold">PPN</td>
-            <td>
-                <dx:ASPxSpinEdit ID="TxtPPN" runat="server" DecimalPlaces="0" 
-                    DisplayFormatString="{0:N0}" Number="0" Width="230px" 
-                    CssClass="font1" HorizontalAlign="Right" AutoPostBack="true" NullText="0">
-                <SpinButtons ShowIncrementButtons="False"/>
-                </dx:ASPxSpinEdit>   
-            </td>
-            <td>
-                <dx:ASPxCheckBox ID="CbOverride" runat="server" Text="Override PPN" Width="100px" Enabled="false" AutoPostBack="true">
-                </dx:ASPxCheckBox>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="5"></td>
-            <td style="width:200px; text-align:center; font-family:Tahoma; font-size:12px; font-weight:bold">Grand Total</td>
-            <td>
-                <dx:ASPxTextBox ID="TxtTotal" runat="server" Width="230px" CssClass="font1" 
-                    Enabled="false" HorizontalAlign="Right" Text="0"></dx:ASPxTextBox>  
-            </td>
-        </tr>  
-        </table>
-    </td>
-</tr>
-</table> <%--Grid Data--%>
+     <%--Grid Data--%>
 
 <table>
 <tr>
