@@ -575,12 +575,6 @@
                 TxtUraian.Enabled = False
                 TxtUom.Enabled = False
             End If
-            'If DDLSPR.Value <> "" Then
-            '    DDLAlokasi.Enabled = False
-            '    DDLRap.Enabled = False
-            '    TxtUraian.Enabled = False
-            '    TxtUom.Enabled = False
-            'End If
             PopEntry.ShowOnPageLoad = True
 
         ElseIf e.CommandName = "BtnDelete" Then
