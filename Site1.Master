@@ -59,6 +59,8 @@
                 <dx:MenuItem Text="RAP" Name="FrmRAP.aspx" NavigateUrl="FrmRAP.aspx"></dx:MenuItem>
                 <dx:MenuItem Text="Procurement" Name="#Procurement1">
                     <Items>
+                    <dx:MenuItem Text="Permintaan Material/Alat" Name="FrmSPR.aspx" NavigateUrl="FrmSPR.aspx"></dx:MenuItem>
+                    <dx:MenuItem Text="Approval Permintaan Material/Alat" Name="FrmApprovalSPR.aspx" NavigateUrl="FrmApprovalSPR.aspx"></dx:MenuItem>
                     <dx:MenuItem Text="Kontrak/Purchase Order" Name="FrmKO.aspx" NavigateUrl="FrmKO.aspx"></dx:MenuItem>
                     <dx:MenuItem Text="Approval Kontrak/Purchase Order" Name="FrmApprovalKO.aspx" NavigateUrl="FrmApprovalKO.aspx"></dx:MenuItem>
                     <dx:MenuItem Text="Invoice" Name="FrmInvoice.aspx" NavigateUrl="FrmInvoice.aspx"></dx:MenuItem>

@@ -328,8 +328,6 @@
                         VolSPRinKO = VolSPRinKO + If(RsFindVol("Volume") Is DBNull.Value, 0, RsFindVol("Volume"))
                     End If
                 End Using
-                LblErr.Text = VolSPRinKO
-                ErrMsg.ShowOnPageLoad = True
                 Dim VolSPR As Decimal
                 Dim CmdFindVolSPR As New Data.SqlClient.SqlCommand
                 With CmdFindVolSPR

@@ -151,6 +151,22 @@ Public Class Site1
                 End If
 
                 'SubMenu Entry > Procurement
+                If RsLogin("EntrySPR") = "0" Then
+                    TmpSubMenuEntry2 = TmpSubMenuEntry2 + 1
+                    Item = Menu1.Items.FindByName("FrmSPR.aspx")
+                    If Item IsNot Nothing Then
+                        Item.Visible = False
+                    End If
+                End If
+
+                If RsLogin("ApprovalSPR") = "0" Then
+                    TmpSubMenuEntry2 = TmpSubMenuEntry2 + 1
+                    Item = Menu1.Items.FindByName("FrmApprovalSPR.aspx")
+                    If Item IsNot Nothing Then
+                        Item.Visible = False
+                    End If
+                End If
+
                 If RsLogin("KO") = "0" Then
                     TmpSubMenuEntry2 = TmpSubMenuEntry2 + 1
                     Item = Menu1.Items.FindByName("FrmKO.aspx")

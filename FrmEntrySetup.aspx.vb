@@ -70,6 +70,8 @@
                         CbPJ.Checked = If(RsFind("PJ") = "0", False, True)
                         CbApprovalPJ.Checked = If(RsFind("ApprovalPJ") = "0", False, True)
                         CbPaymentPD.Checked = If(RsFind("PayPD") = "0", False, True)
+                        CbEntrySPR.Checked = If(RsFind("EntrySPR") = "0", False, True)
+                        CbApprovalSPR.Checked = If(RsFind("ApprovalSPR") = "0", False, True)
                         CbKO.Checked = If(RsFind("KO") = "0", False, True)
                         CbApprovalKO.Checked = If(RsFind("ApprovalKO") = "0", False, True)
                         CbInvoice.Checked = If(RsFind("Invoice") = "0", False, True)
@@ -250,11 +252,11 @@
                                "TrackPD,SetupAkses,ChangePasswd,AksesJob,UserEntry,TimeEntry,AksesAlokasi,RPPM,OverrideSaldo,SerapRAP,QueryTermin," & _
                                "SRPengeluaran,COA,GlReff,Identitas,JurnalEntry,JurnalApproval,ResumePK,JurnalExport,LapKeu,LabaRugi,BukuTambahan," & _
                                "BukuBesar,NeracaMutasi,NotaAkuntansi,TrackingKO,RptTrackingKO,CPanel,Invoice,InvoiceReceipt,ItemPrice,CancelPO,NPWP," & _
-                               "ApprovalTermin,CashFlow,QueryAP,QueryPD,QueryJurnal,SerapRAPKO,RPPM1,PiutangProgress) VALUES " & _
+                               "ApprovalTermin,CashFlow,QueryAP,QueryPD,QueryJurnal,SerapRAPKO,RPPM1,PiutangProgress, EntrySPR, ApprovalSPR) VALUES " & _
                                "(@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9,@P10,@P11,@P13,@P14,@P15,@P16,@P17,@P18,@P19,@P20,@P21," & _
                                "@P22,@P23,@P24,@P25,@P26,@P27,@P28,@P29,@P30,@P31,@P32,@P33,@P34,@P35,@P36,@P37,@P38,@P39,@P40,@P41,@P42,@P43,@P44,@P45," & _
                                "@P46,@P47,@P48,@P49,@P50,@P51,@P52,@P53,@P54,@P55,@P56,@P57,@P58,@P59,@P60,@P61,@P62,@P63,@P64,@P65,@P66,@P67,@P68,@P69,@P70," & _
-                               "@P71,@P72,@P73,@P74)"
+                               "@P71,@P72,@P73,@P74,@P75,@P76)"
                 .Parameters.AddWithValue("@P1", TxtUserID.Text)
                 .Parameters.AddWithValue("@P2", TxtUserName.Text)
                 .Parameters.AddWithValue("@P3", Encrypt(TxtPassword.Text))
@@ -328,6 +330,8 @@
                 .Parameters.AddWithValue("@P72", If(CbRAPKO.Checked = True, "1", "0"))
                 .Parameters.AddWithValue("@P73", If(CbRPPM1.Checked = True, "1", "0"))
                 .Parameters.AddWithValue("@P74", If(CbPiuProgress.Checked = True, "1", "0"))
+                .Parameters.AddWithValue("@P75", If(CbEntrySPR.Checked = True, "1", "0"))
+                .Parameters.AddWithValue("@P76", If(CbApprovalSPR.Checked = True, "1", "0"))
                 .ExecuteNonQuery()
             End With
         Else
@@ -345,7 +349,8 @@
                                    "Identitas=@P47,JurnalEntry=@P48,JurnalApproval=@P49,ResumePK=@P50,JurnalExport=@P51,LapKeu=@P52,LabaRugi=@P53," & _
                                    "BukuTambahan=@P54,BukuBesar=@P55,NeracaMutasi=@P56,NotaAkuntansi=@P57,TrackingKO=@P58,RptTrackingKO=@P59,CPanel=@P60," & _
                                    "Invoice=@P61,InvoiceReceipt=@P62,ItemPrice=@P63,CancelPO=@P64,NPWP=@P65,ApprovalTermin=@P66,CashFlow=@P67," & _
-                                   "QueryAP=@P68,QueryPD=@P69,QueryJurnal=@P70,SerapRAPKO=@P71,RPPM1=@P72,PiutangProgress=@P73 WHERE UserID=@P74"
+                                   "QueryAP=@P68,QueryPD=@P69,QueryJurnal=@P70,SerapRAPKO=@P71,RPPM1=@P72,PiutangProgress=@P73,EntrySPR=@P74," & _
+                                   "ApprovalSPR=@P75 WHERE UserID=@P76"
                 Else
                     .CommandText = "UPDATE Login SET Alokasi=@P2,Bank=@P3,RekPengirim=@P4,Vendor=@P5,TipeForm=@P6,Kategori=@P7,Proposal=@P8," & _
                                    "Job=@P9,RAP=@P11,KO=@P12,ApprovalKO=@P13,ClosingKO=@P14,KOAddendum=@P15,PD=@P16,ApprovalPD_KK=@P17," & _
@@ -356,7 +361,8 @@
                                    "Identitas=@P47,JurnalEntry=@P48,JurnalApproval=@P49,ResumePK=@P50,JurnalExport=@P51,LapKeu=@P52,LabaRugi=@P53," & _
                                    "BukuTambahan=@P54,BukuBesar=@P55,NeracaMutasi=@P56,NotaAkuntansi=@P57,TrackingKO=@P58,RptTrackingKO=@P59,CPanel=@P60," & _
                                    "Invoice=@P61,InvoiceReceipt=@P62,ItemPrice=@P63,CancelPO=@P64,NPWP=@P65,ApprovalTermin=@P66,CashFlow=@P67," & _
-                                   "QueryAP=@P68,QueryPD=@P69,QueryJurnal=@P70,SerapRAPKO=@P71,RPPM1=@P72,PiutangProgress=@P73 WHERE UserID=@P74"
+                                   "QueryAP=@P68,QueryPD=@P69,QueryJurnal=@P70,SerapRAPKO=@P71,RPPM1=@P72,PiutangProgress=@P73,EntrySPR=@P74," & _
+                                   "ApprovalSPR=@P75 WHERE UserID=@P76"
                 End If
                 .Parameters.AddWithValue("@P1", Encrypt(TxtPassword.Text))
                 .Parameters.AddWithValue("@P2", If(CbAlokasi.Checked = True, "1", "0"))
@@ -430,7 +436,9 @@
                 .Parameters.AddWithValue("@P71", If(CbRAPKO.Checked = True, "1", "0"))
                 .Parameters.AddWithValue("@P72", If(CbRPPM1.Checked = True, "1", "0"))
                 .Parameters.AddWithValue("@P73", If(CbPiuProgress.Checked = True, "1", "0"))
-                .Parameters.AddWithValue("@P74", Session("Setup"))
+                .Parameters.AddWithValue("@P74", If(CbEntrySPR.Checked = True, "1", "0"))
+                .Parameters.AddWithValue("@P75", If(CbApprovalSPR.Checked = True, "1", "0"))
+                .Parameters.AddWithValue("@P76", Session("Setup"))
                 .ExecuteNonQuery()
                 .Dispose()
             End With
@@ -576,6 +584,8 @@
         CbPJ.Checked = True
         CbApprovalPJ.Checked = True
         CbPaymentPD.Checked = True
+        CbEntrySPR.Checked = True
+        CbApprovalSPR.Checked = True
         CbKO.Checked = True
         CbApprovalKO.Checked = True
         CbInvoice.Checked = True
