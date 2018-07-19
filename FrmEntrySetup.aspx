@@ -167,6 +167,18 @@
                 <tr>
                     <td colspan="2"></td>
                     <td>
+                        <asp:CheckBox ID="CbEntrySPR" runat="server" Text="Permintaan Material/Alat" />
+                    </td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td>
+                        <asp:CheckBox ID="CbApprovalSPR" runat="server" Text="Approval Permintaan Material/Alat" />
+                    </td>
+                    <td></td>    
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>
                         <asp:CheckBox ID="CbKO" runat="server" Text="Kontrak/Purchase Order" />
                     </td>
                     <td></td>

@@ -6,7 +6,7 @@
             Response.Redirect("Default.aspx")
             Exit Sub
         Else
-            If CheckAkses1(Session("User").ToString.Split("|")(1), "ApprovalKO") = False Then
+            If CheckAkses1(Session("User").ToString.Split("|")(1), "ApprovalSPR") = False Then
                 Response.Redirect("Default.aspx")
                 Exit Sub
             End If

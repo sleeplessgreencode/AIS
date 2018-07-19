@@ -5435,6 +5435,22 @@ CbRAP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:AIS.FrmEntrySetup.CbEntrySPR">
+	<summary>
+CbEntrySPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:AIS.FrmEntrySetup.CbApprovalSPR">
+	<summary>
+CbApprovalSPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:AIS.FrmEntrySetup.CbKO">
 	<summary>
 CbKO control.

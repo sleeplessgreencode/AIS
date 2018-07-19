@@ -194,6 +194,24 @@ Partial Public Class FrmEntrySetup
     Protected WithEvents CbRAP As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
+    '''CbEntrySPR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CbEntrySPR As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''CbApprovalSPR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CbApprovalSPR As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
     '''CbKO control.
     '''</summary>
     '''<remarks>
