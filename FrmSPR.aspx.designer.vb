@@ -14,6 +14,42 @@ Option Explicit On
 Partial Public Class FrmSPR
 
     '''<summary>
+    '''ErrMsg control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ErrMsg As Global.DevExpress.Web.ASPxPopupControl
+
+    '''<summary>
+    '''PopupControlContentControl1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PopupControlContentControl1 As Global.DevExpress.Web.PopupControlContentControl
+
+    '''<summary>
+    '''LblErr control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblErr As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BtnClose control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnClose As Global.DevExpress.Web.ASPxButton
+
+    '''<summary>
     '''DDLJob control.
     '''</summary>
     '''<remarks>
@@ -23,13 +59,22 @@ Partial Public Class FrmSPR
     Protected WithEvents DDLJob As Global.DevExpress.Web.ASPxComboBox
 
     '''<summary>
-    '''BtnKontrak control.
+    '''BtnAddSPR control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnKontrak As Global.DevExpress.Web.ASPxButton
+    Protected WithEvents BtnAddSPR As Global.DevExpress.Web.ASPxButton
+
+    '''<summary>
+    '''GridData control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GridData As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
     '''MsgBox1 control.

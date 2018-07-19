@@ -208,6 +208,7 @@
     <Content Include="FrmApprovalPD_KK.aspx" />
     <Content Include="FrmApprovalPD_KT.aspx" />
     <Content Include="FrmApprovalPJ.aspx" />
+    <Content Include="FrmApprovalSPR.aspx" />
     <Content Include="FrmBank.aspx" />
     <Content Include="FrmBukuBesar.aspx" />
     <Content Include="FrmBukuTambahan.aspx" />
@@ -224,6 +225,7 @@
     <Content Include="FrmEntryPO.aspx" />
     <Content Include="FrmEntryRAP.aspx" />
     <Content Include="FrmEntrySetup.aspx" />
+    <Content Include="FrmEntrySPR.aspx" />
     <Content Include="FrmExportJurnal.aspx" />
     <Content Include="FrmJaminan.aspx" />
     <Content Include="FrmJurnal.aspx" />
@@ -265,6 +267,7 @@
     <Content Include="FrmRptRekapPayment.aspx" />
     <Content Include="FrmRptRekapPPD.aspx" />
     <Content Include="FrmRptRekapRAP.aspx" />
+    <Content Include="FrmRptSPR.aspx" />
     <Content Include="FrmRptSummaryKontrak.aspx" />
     <Content Include="FrmRptTermin.aspx" />
     <Content Include="FrmSaldo.aspx" />
@@ -640,6 +643,14 @@
     <Compile Include="DataSet\DsRpt.vb">
       <DependentUpon>DsRpt.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet\DsSPR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsSPR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DsSPR.vb">
+      <DependentUpon>DsSPR.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet\DsTermin.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -730,6 +741,13 @@
     </Compile>
     <Compile Include="FrmApprovalPJ.aspx.vb">
       <DependentUpon>FrmApprovalPJ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmApprovalSPR.aspx.designer.vb">
+      <DependentUpon>FrmApprovalSPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApprovalSPR.aspx.vb">
+      <DependentUpon>FrmApprovalSPR.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="FrmBank.aspx.designer.vb">
@@ -842,6 +860,13 @@
     </Compile>
     <Compile Include="FrmEntrySetup.aspx.vb">
       <DependentUpon>FrmEntrySetup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmEntrySPR.aspx.designer.vb">
+      <DependentUpon>FrmEntrySPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntrySPR.aspx.vb">
+      <DependentUpon>FrmEntrySPR.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="FrmExportJurnal.aspx.designer.vb">
@@ -1131,6 +1156,13 @@
       <DependentUpon>FrmRptRekapRAP.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="FrmRptSPR.aspx.designer.vb">
+      <DependentUpon>FrmRptSPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptSPR.aspx.vb">
+      <DependentUpon>FrmRptSPR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="FrmRptSummaryKontrak.aspx.designer.vb">
       <DependentUpon>FrmRptSummaryKontrak.aspx</DependentUpon>
     </Compile>
@@ -1279,6 +1311,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\RptSPR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSPR.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\RptSRPengeluaran.vb">
       <AutoGen>True</AutoGen>
@@ -1658,6 +1696,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptRekapKO.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSPR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSPR.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\RptSRPengeluaran.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptSRPengeluaran.vb</LastGenOutput>
@@ -1774,6 +1816,17 @@
     </None>
     <None Include="DataSet\DsPPD.xss">
       <DependentUpon>DsPPD.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsSPR.xsc">
+      <DependentUpon>DsSPR.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsSPR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsSPR.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsSPR.xss">
+      <DependentUpon>DsSPR.xsd</DependentUpon>
     </None>
     <None Include="DataSet\DsTermin.xsc">
       <DependentUpon>DsTermin.xsd</DependentUpon>
