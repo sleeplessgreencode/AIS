@@ -569,6 +569,12 @@
             TxtVol.Text = SelectRecord.Cells(3).Text
             TxtUom.Text = SelectRecord.Cells(4).Text
             TxtHrgSatuan.Text = SelectRecord.Cells(5).Text
+            If DDLSPR.Value <> "0" Then
+                DDLAlokasi.Enabled = False
+                DDLRap.ClientEnabled = False
+                TxtUraian.Enabled = False
+                TxtUom.Enabled = False
+            End If
             'If DDLSPR.Value <> "" Then
             '    DDLAlokasi.Enabled = False
             '    DDLRap.Enabled = False
