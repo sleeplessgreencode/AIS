@@ -258,8 +258,7 @@
                         <td>
                             <asp:GridView ID="GridDataMaterial" runat="server" AutoGenerateColumns="False"               
                                 CellPadding="4" ForeColor="#333333" GridLines="Vertical" 
-                                PageSize="20" ShowFooter="True" 
-                                ShowHeaderWhenEmpty="True">
+                                PageSize="20" ShowHeaderWhenEmpty="True">
                                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                                 <Columns>              
                                     <asp:BoundField DataField="NoUrut" HeaderText="No."  HeaderStyle-Width="35px" ItemStyle-Width = "35px" ItemStyle-HorizontalAlign="Center">     
