@@ -84,6 +84,7 @@
                                     .SetParameterValue("@Kepada", RsLoad("Kepada"))
                                     .SetParameterValue("@UtkPekerjaan", RsLoad("UtkPekerjaan"))
                                     .SetParameterValue("@Barcode", "*" & RsLoad("NoSPR") & "*")
+                                    .SetParameterValue("@JobName", RsLoad("JobNo") & " - " & RsLoad("JobNm"))
                                     .SetParameterValue("@PrintInfo", "Printed On " & Format(Now, "dd-MMM-yyyy HH:mm") & " By " & Session("User").ToString.Split("|")(0))
                                     '.SetParameterValue("@Terbilang", "Terbilang : " + If(Jumlah = 0, "Nol Rupiah,", Trim(Terbilang(Jumlah)) + " Rupiah."))
                                 End If
