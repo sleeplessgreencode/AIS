@@ -275,7 +275,7 @@
                                     </asp:BoundField>
                                     <asp:BoundField DataField="Uom" HeaderText="Sat" HeaderStyle-Width= "30px" ItemStyle-Width = "30px" ItemStyle-HorizontalAlign="Center">                        
                                     </asp:BoundField>
-                                    <asp:BoundField DataField="Alokasi" HeaderText="Alokasi" 
+                                    <asp:BoundField DataField="Alokasi" HeaderText="Alokasi"
                                             HeaderStyle-Width="30px" ItemStyle-Width = "30px">
                                         <HeaderStyle CssClass="hiddencol" />
                                         <ItemStyle CssClass="hiddencol" />
